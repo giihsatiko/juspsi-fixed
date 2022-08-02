@@ -25,11 +25,11 @@
     </div>
     <div class="container-fluid">
       <div class="nav">
-        <a href="index.php"><img src="images/logo.png" alt="logo página"></a>
+        <a href="index.php" class="img-fluid"><img src="assets/images/logo.png" alt="logo página"></a>
         <div class="itens-nav">
-          <a href="#" class="lupa"><img src="images/lupa.png" alt="lupa"></a>
+          <a href="#" class="lupa"><img src="assets/images/lupa.png" alt="lupa"></a>
           <a href="#" class="botao-laranja px-3">
-            <img src="images/user.png" alt="usuário">
+            <img src="assets/images/user.png" alt="usuário">
             Login | Criar conta
           </a>
           <div class="menu">
@@ -45,27 +45,27 @@
           <div class="itens-1 col-12 col-lg-5">
             <div class="links-1 fw-400 fs-18">
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>HOME</p>
               </a>
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>INSTITUCIONAL</p>
               </a>
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>NOVIDADES</p>
               </a>
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>MATERIAIS GRATUITOS</p>
               </a>
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>DEPOIMENTOS</p>
               </a>
               <a href="">
-                <img src="images/seta-lado-branca.svg" alt="">
+                <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>CONTATO</p>
               </a>
             </div>

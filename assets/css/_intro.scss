@@ -1,0 +1,66 @@
+.bg-intro {
+  background-image: url(assets/images/banner.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 557px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  .texto-intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      max-width: 734px;
+    }
+    p {
+      width: 488px;
+    }
+    .botao-laranja {
+      width: 266px;
+      height: 45px;
+    }
+  }
+}
+
+.swiper-pagination {
+  padding-right: 34px;
+  width: fit-content;
+  position: static;
+}
+.swiper-pagination-bullets {
+  display: flex;
+  gap: 33px;
+  .swiper-pagination-bullet {
+    border: 1px solid white !important;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+}
+
+.paginacao-intro {
+  padding: 0 32px 34px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: fit-content;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  .setas-intro {
+    display: flex;
+    width: fit-content;
+    padding-left: 34px;
+    .intro-button-prev {
+      padding-right: 26px;
+    }
+  }
+}

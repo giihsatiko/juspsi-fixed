@@ -7,14 +7,14 @@
             <div class="atendimento">
               <h4 class="fw600 fs18">Atendimento</h4>
               <div>
-                <img src="assets/images/local.png" alt="pin localização">
+                <img src="assets/assets/images/local.png" alt="pin localização">
                 <p class="fw400 fs18">Seg à Sex das 8h às 18hrs</p>
               </div>
             </div>
             <div class="atendimento">
               <h4 class="fw600 fs18">Central de Atendimento</h4>
               <div>
-                <img src="assets/images/tel.png" alt="telefone">
+                <img src="assets/assets/images/tel.png" alt="telefone">
                 <p>18 3916 2287</p>
               </div>
             </div>
@@ -79,8 +79,8 @@
         <div class="botoes col-12 col-lg-3 align-items-center">
           <div class="row w-100 justify-content-between justify-content-lg-end">
             <div class="col-lg-12 col-sm-9 d-flex flex-lg-column align-items-center caixa-botoes">
-              <a href="" class="botao-preto"><img src="assets/images/grupo.png" alt="grupo"> COLABORADOR</a>
-              <a href="" class="botao-vermelho fw600"><img src="assets/images/usuario.png" alt="usuario"> CLIENTE</a>
+              <a href="" class="botao-preto"><img src="assets/assets/images/grupo.png" alt="grupo"> COLABORADOR</a>
+              <a href="" class="botao-vermelho fw600"><img src="assets/assets/images/usuario.png" alt="usuario"> CLIENTE</a>
             </div>
             <div class="col-lg-12 col-sm-3 d-none d-sm-flex">
               <ul>
@@ -103,10 +103,10 @@
         </div>
       </div>
       <div class="direitos">
-        <img src="assets/images/logo-horizontal.png" alt="logo">
+        <img src="assets/assets/images/logo-horizontal.png" alt="logo">
         <p class="fw500 fs14">
           Todos os direitos reservados © 2021 | AS Incorporadora - CRECI 021030-J - Criação
-          <img src="assets/images/oxigenweb.png" alt="logo oxigenweb">
+          <img src="assets/assets/images/oxigenweb.png" alt="logo oxigenweb">
         </p>
       </div>
     </div>
@@ -115,15 +115,15 @@
     <div class="container-fluid container-lg">
       <div class="contato-rodape">
         <a href="">
-          <img src="assets/images/carta.png" alt="carta">
+          <img src="assets/assets/images/carta.png" alt="carta">
           <p class="fw500 fs18 fs14-sm"><span class="fw700">Formulário</span> de contato</p>
         </a>
         <a href="">
-          <img src="assets/images/tel2.png" alt="telefone">
+          <img src="assets/assets/images/tel2.png" alt="telefone">
           <p class="fw500 fs18 fs14-sm"><span class="fw700">Vendas</span> 18 3916 2287</p>
         </a>
         <a href="">
-          <img src="assets/images/whatsapp.png" alt="whatsapp">
+          <img src="assets/assets/images/whatsapp.png" alt="whatsapp">
           <p class="fw500 fs18 fs14-sm"><span class="fw700">Whatsapp</span> 18 3916 2287</p>
         </a>
       </div>
@@ -134,22 +134,12 @@
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 
-<script>
-  var swiper = new Swiper(".mySwiper-apresentacao", {
-    navigation: {
-      nextEl: ".apresentacao-button-next",
-      prevEl: ".apresentacao-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-</script>
 
 <script>
   jQuery('document').ready(function() {
-    jQuery('.links-menu').addClass('d-none')
+    jQuery('.links-menu').addClass('d-none');
     jQuery('.menu').on('click', function() {
       if (jQuery('.menu').hasClass('active')) {
         jQuery('.menu').removeClass('active');
@@ -161,6 +151,16 @@
         jQuery('body').addClass('overflow-hidden');
       }
     });
+  });
+
+  var swiper1 = new Swiper(".mySwiper-intro", {
+    navigation: {
+      nextEl: ".intro-button-next",
+      prevEl: ".intro-button-prev",
+    },
+    pagination: {
+      el: ".intro-pagination",
+    },
   });
 </script>
 

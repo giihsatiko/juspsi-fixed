@@ -1,23 +1,32 @@
 <?php include "header.php"; ?>
-<section class="swiper-apresentação">
-  <div class="swiper mySwiper-apresentacao">
+<section class="swiper-apresentacao">
+  <div class="swiper mySwiper-intro">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        
-      </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <?php for ($i = 0; $i < 5; $i++) : ?>
+        <div class="swiper-slide">
+          <div class="bg-intro">
+            <div class="texto-intro">
+              <h1 class="fw-900 fs-64">Terapia cognitivo comportamental</h1>
+              <p class="fw-500 fs-24">Passo a passo para se tornar um excelente psicoterapeuta.</p>
+              <a href="" class="botao-laranja fw-800 fs-14">CLIQUE E CONHEÇA</a>
+            </div>
+          </div>
+        </div>
+      <?php endfor; ?>
     </div>
-    <div class="paginacao-apresentacao">
-      <div class="swiper-pagination"></div>
-      <div class="apresentacao-button-next"></div>
-      <div class="apresentacao-button-prev"></div>
+    <div class="paginacao-intro">
+      <div class="intro-pagination"></div>
+      <div class="setas-intro">
+        <div class="intro-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L3 12L12 21" stroke="white" stroke-width="3" stroke-linecap="square" />
+          </svg>
+        </div>
+        <div class="intro-button-next">
+          <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3L12 12L3 21" stroke="white" stroke-width="3" stroke-linecap="square" />
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -35,20 +44,20 @@
           <div class="swiper-slide">
             <div class="cursos-itens">
               <a href="" class="curso-link">
-                <img src="images/direito.png" alt="biblioteca" class="img-fluid">
+                <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
                 <div class="texto-cursos">
                   <h3>Cursos de Direito</h3>
                   <span></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
                     semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
                     eleifend lacinia.</p>
-                  <img src="images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  <img src="assets/images/mais.png" alt="simbolo mais" class="mais img-fluid">
                 </div>
               </a>
             </div>
           </div>
         <?php endfor; ?>
-      </div>
+      </div> -->
       <div class="button-next-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
         </svg>
@@ -67,29 +76,29 @@
           <div class="swiper-slide">
             <div class="principais-cursos">
               <a href="">
-                <img src="images/cerebro.png" class="img-fluid" alt="cerebro">
+                <img src="assets/images/cerebro.png" class="img-fluid" alt="cerebro">
                 <div class="cursos-texto">
                   <span>CURSO ONLINE</span>
                   <h4>Terapia cognitivo comportamental</h4>
                   <div class="classificacao">
-                    <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                    <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
                     <p>4,5</p>
                   </div>
                   <div class="beneficios">
                     <div>
-                      <img src="images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                      <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
                       <p>Certificado 4h</p>
                     </div>
                     <div>
-                      <img src="images/camera-zoom.png" alt="camera" class="img-fluid">
+                      <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
                       <p>Zoom</p>
                     </div>
                     <div>
-                      <img src="images/valor.png" alt="cifrao" class="img-fluid">
+                      <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
                       <p>R$ <b>99,90</b></p>
                     </div>
                   </div>
@@ -116,16 +125,16 @@
 <aside>
   <div class="container-fluid">
     <div class="conheca-container">
-      <img src="images/modelo.png" alt="modelo">
+      <img src="assets/images/modelo.png" alt="modelo">
       <div class="texto-conheca">
         <h1>TRANSFORME SUA VIDA ATRAVÉS DOS CURSOS JUSPSI</h1>
         <div>
           <div class="vantagens">
-            <img src="images/relogio.png" alt="relogio">
+            <img src="assets/images/relogio.png" alt="relogio">
             <h3>APRENDA OS CURSOS NO SEU TEMPO</h3>
           </div>
           <div class="vantagens">
-            <img src="images/certificado.png" alt="certificado">
+            <img src="assets/images/certificado.png" alt="certificado">
             <h3>CERTIFICADOS VÁLIDOS EM TODO O BRASIL</h3>
           </div>
         </div>
@@ -140,19 +149,19 @@
     <div class="container-fluid">
       <div class="diferenciais-itens">
         <div>
-          <img src="images/caixa.png" alt="caixa" class="img-fluid">
+          <img src="assets/images/caixa.png" alt="caixa" class="img-fluid">
           <p>Metodologia didática, prática e transformadora</p>
         </div>
         <div>
-          <img src="images/livro.png" alt="livro" class="img-fluid">
+          <img src="assets/images/livro.png" alt="livro" class="img-fluid">
           <p>Trabalhamos com métodos de disciplinas multidisciplinares.</p>
         </div>
         <div>
-          <img src="images/quebra-cabeca.png" alt="neurociência" class="img-fluid">
+          <img src="assets/images/quebra-cabeca.png" alt="neurociência" class="img-fluid">
           <p>Utilizamos neurociência que garante maior absorção dos conteúdos.</p>
         </div>
         <div>
-          <img src="images/suporte.png" alt="suporte ao aluno" class="img-fluid">
+          <img src="assets/images/suporte.png" alt="suporte ao aluno" class="img-fluid">
           <p>Damos suporte ao aluno para ingresso no mercado de trabalho.</p>
         </div>
       </div>
@@ -186,7 +195,7 @@
             <div class="swiper-slide">
               <div class="depoimentos-item">
                 <span></span>
-                <img src="images/depoimento.png" alt="aluno" class="img-fluid">
+                <img src="assets/images/depoimento.png" alt="aluno" class="img-fluid">
                 <div>
                   <h4>laicmonteiro</h4>
                   <p>“Curso maravilhoso! Super recomendo! dias de muita troca e compartilhamento de conhecimento.
