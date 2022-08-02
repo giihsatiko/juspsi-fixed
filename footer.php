@@ -153,6 +153,19 @@
     });
   });
 
+  jQuery('document').ready(function() {
+    jQuery('.mais').on('click', function (){
+      if(jQuery('.texto-oculto').hasClass('clicado')) {
+        jQuery('.texto-oculto').removeClass('clicado');
+        jQuery('.faixa, .texto-aberto').removeClass('d-none');
+      }
+      else {
+        jQuery('.texto-oculto').addClass('clicado');
+        jQuery('.faixa, .texto-aberto').addClass('d-none');
+      }
+    });
+  });
+
   var swiper1 = new Swiper(".mySwiper-intro", {
     navigation: {
       nextEl: ".intro-button-next",
@@ -161,6 +174,31 @@
     pagination: {
       el: ".intro-pagination",
     },
+  });
+  var swiper2 = new Swiper(".mySwiper-categorias", {
+    navigation: {
+      nextEl: ".categorias-button-next",
+      prevEl: ".categorias-button-prev",
+    },
+    pagination: {
+      el: ".categorias-pagination",
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1500: {
+      slidesPerView: 4,
+    }
+  }
   });
 </script>
 

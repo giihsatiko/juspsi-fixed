@@ -1,5 +1,5 @@
 <?php include "header.php"; ?>
-<section class="swiper-apresentacao">
+<section class="intro">
   <div class="swiper mySwiper-intro">
     <div class="swiper-wrapper">
       <?php for ($i = 0; $i < 5; $i++) : ?>
@@ -32,39 +32,93 @@
 </section>
 
 <main>
-  <div class="categorias">
+  <div class="container-fluid">
     <div class="texto-categorias">
-      <h2>PRINCIPAIS CATEGORIAS</h2>
-      <p>Acesse conteúdos da sua área, e experimente novos campos de atuação, expandindo as suas estratégias,
+      <h2 class="fw-700 fs-35">PRINCIPAIS CATEGORIAS</h2>
+      <p class="fw-500 fs-24">Acesse conteúdos da sua área, e experimente novos campos de atuação, expandindo as suas estratégias,
         técnicas e possibilidades de ingresso no mercado de trabalho</p>
+      <!-- adicionar fonte roboto -->
     </div>
-    <div class="swiper mySwiper mySwiper-categorias">
+    <div class="swiper mySwiper mySwiper-categorias" id="curso-link">
       <div class="swiper-wrapper">
-        <?php for ($i = 0; $i < 5; $i++) : ?>
-          <div class="swiper-slide">
-            <div class="cursos-itens">
-              <a href="" class="curso-link">
-                <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
-                <div class="texto-cursos">
-                  <h3>Cursos de Direito</h3>
-                  <span></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+        <div class="swiper-slide">
+          <div class="cursos-itens">
+            <a href="#curso-link" class="curso-link">
+              <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
+              <div class="texto-cursos">
+                <h3>Cursos de Direito</h3>
+                <div class="texto-oculto">
+                  <span class="faixa d-none"></span>
+                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
                     semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
                     eleifend lacinia.</p>
-                  <img src="assets/images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
-        <?php endfor; ?>
-      </div> -->
-      <div class="button-next-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
-        </svg>
+        </div>
+        <div class="swiper-slide">
+          <div class="cursos-itens">
+            <a href="#curso-link" class="curso-link">
+              <img src="assets/images/psicologia.png" alt="biblioteca" class="img-fluid">
+              <div class="texto-cursos">
+                <h3>Cursos de Psicologia</h3>
+                <div class="texto-oculto">
+                  <span class="faixa d-none"></span>
+                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
+                    eleifend lacinia.</p>
+                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cursos-itens">
+            <a href="#curso-link" class="curso-link">
+              <img src="assets/images/servico-social.png" alt="biblioteca" class="img-fluid">
+              <div class="texto-cursos">
+                <h3>Serviço Social</h3>
+                <div class="texto-oculto">
+                  <span class="faixa d-none"></span>
+                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
+                    eleifend lacinia.</p>
+                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cursos-itens">
+            <a href="#curso-link" class="curso-link">
+              <img src="assets/images/cursos-preparatorios.png" alt="biblioteca" class="img-fluid">
+              <div class="texto-cursos">
+                <h3>Cursos Preparatórios</h3>
+                <div class="texto-oculto">
+                  <span class="faixa d-none"></span>
+                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
+                    eleifend lacinia.</p>
+                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="button-prev-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 3L3 12L12 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
-        </svg></div>
+      <div class="setas-categorias d-flex d-lg-none">
+        <div class="button-next-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
+          </svg>
+        </div>
+        <div class="button-prev-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L3 12L12 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
+          </svg></div>
+      </div>
     </div>
     <div class="texto-categorias">
       <h2>PRINCIPAIS CURSOS</h2>

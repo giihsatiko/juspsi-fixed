@@ -1,16 +1,7 @@
-$laranja: #F07F3C;
-$azul-escuro: #31306C;
-$branco: #FFFFFF;
-.categorias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main {
   background-color: $azul-escuro;
-  height: fit-content;
-  .button {
-    margin-bottom: 50px;
-  }
 }
+
 .texto-categorias {
   padding-top: 110px;
   display: flex;
@@ -25,7 +16,7 @@ $branco: #FFFFFF;
     font-size: 35px;
   }
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 28.13px;
@@ -33,12 +24,7 @@ $branco: #FFFFFF;
     width: 100%;
   }
 }
-.cursos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+
 .cursos-itens {
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,8 +33,9 @@ $branco: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   .curso-link {
-    max-height:538px;
+    max-height: 538px;
     height: 100%;
     max-width: 538px;
     width: 100%;
@@ -56,16 +43,10 @@ $branco: #FFFFFF;
     &:hover {
       transform: scale(1.2);
       transition-duration: 1s;
-      &>img {
+      & > img {
         filter: brightness(50%);
       }
     }
-  }
-  span {
-    width: 31px;
-    background-color: $laranja;
-    border: 2px solid $laranja;
-    display: none;
   }
   a {
     display: flex;
@@ -81,24 +62,6 @@ $branco: #FFFFFF;
       text-align: center;
       padding-bottom: 40px;
     }
-    p {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 25px;
-      text-align: center;
-      padding-top: 16px;
-      padding-bottom: 30px;
-      display: none;
-      width: 253px;
-    }
-    &:hover {
-      p, span {
-        display: block;
-      }
-      .mais {
-        background-color: #F07F3C;
-      }
-    }
   }
 }
 .texto-cursos {
@@ -108,16 +71,52 @@ $branco: #FFFFFF;
   align-items: center;
   position: absolute;
 }
-.mais {
-  border: 3px solid $laranja;
-  border-radius: 100%;
-  padding: 15px;
+
+.texto-oculto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .faixa {
+    height: 2px;
+    width: 31px;
+    background-color: $laranja;
+    border: 2px solid $laranja;
+  }
+  .mais {
+    border: 3px solid $laranja;
+    border-radius: 100%;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    img {
+
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .texto-aberto {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    width: 253px;
+  }
+  &:hover {
+    .mais {
+      background-color: $laranja;
+      border-radius: 100%;
+      padding: 15px;
+    }
+  }
 }
+
 .principais-cursos {
   &:hover {
     transform: scale(1.2);
     transition-duration: 1s;
-    a>img {
+    a > img {
       filter: brightness(50%);
     }
   }
@@ -136,7 +135,7 @@ $branco: #FFFFFF;
   }
   .cursos-texto {
     span {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: $azul-escuro;
       font-weight: 800;
       font-size: 12px;
