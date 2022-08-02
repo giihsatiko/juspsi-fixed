@@ -1,8 +1,4 @@
 
-$laranja: #f07f3c;
-$laranja-escuro: #ff650a;
-$azul-escuro: #31306c;
-$branco: #ffffff;
 .desconto {
   height: 50px;
   text-align: center;
@@ -26,10 +22,10 @@ $branco: #ffffff;
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
-  background-color: #31306c;
   .itens-nav {
     display: flex;
     justify-content: space-between;
+    z-index: 2000;
     .lupa {
       display: flex;
       align-items: center;
@@ -48,21 +44,6 @@ $branco: #ffffff;
   }
 }
 
-.botao-laranja {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: $laranja;
-  filter: drop-shadow(0px 20px 20px rgba(22, 21, 67, 0.2));
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 16px;
-  img {
-    margin-right: 13.14px;
-  }
-}
 
 .menu {
   margin-left: 30px;
@@ -86,20 +67,83 @@ $branco: #ffffff;
     }
     .top {
       top: 0;
+      transition: all 0.5s ease-in-out;
     }
     .mid {
       top: 7px;
+      transition: all 0.8s ease-in-out;
     }
     .bot {
       bottom: 0;
+      transition: all 0.5s ease-in-out;
     }
   }
   p {
     width: 54px;
     height: 22px;
-    font-weight: 600;
-    font-size: 18px;
     color: $laranja;
     margin-bottom: 5px;
   }
+  &.active {
+    .burgir {
+      .top {
+        transform: rotate(30deg);
+        top: 7px;
+      }
+      .mid {
+        opacity: 0;
+      }
+      .bot {
+        transform: rotate(-30deg);
+        top: 7px;
+      }
+    }
+  }
+}
+
+.links-menu {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .itens-1 {
+    height: 100%;
+    background-color: rgba(41, 40, 86, 0.99);
+  }
+  .itens-2 {
+    background: linear-gradient(90deg, rgba(49, 48, 108, 0.99) -0.7%,rgba(100, 58, 155, 0.99) 47.21%,
+     rgba(240, 127, 60, 0.99) 98.21%);
+    backdrop-filter: blur(10px);
+    height: 100%;
+  }
+
+  .links-1, .links-2 {
+    height: 317px;
+    width: fit-content;
+    margin-top: 192px;
+    display: flex;
+    flex-direction: column;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+      color: white;
+      width: fit-content;
+      p {
+        margin-bottom: 0;
+      }
+      img {
+        padding-right: 5px;
+      }
+      &:hover {
+        border-bottom: 3px solid $laranja;
+      }
+    }
+  }
+
 }

@@ -1,5 +1,3 @@
-$azul-escuro: #31306C;
-$laranja: #F07F3C;
 .swiper {
   width: 100%;
   height: 100%;
@@ -8,8 +6,8 @@ $laranja: #F07F3C;
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  width: fit-content;
-  margin-right: 0;
+  background: #fff;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,59 +25,8 @@ $laranja: #F07F3C;
 
 .swiper-slide img {
   display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.swiper-button-next {
-  background-color: white;
-  color: #31306C;
-  height: 8px;
-  padding: 25px;
-  border-radius: 100%;
-  &:hover {
-    background-color: $laranja;
-  }
-}
-
-.swiper-button-prev {
-  background-color: white;
-  color: #31306C;
-  height: 8px;
-  padding: 25px;
-  border-radius: 100%;
-  &:hover {
-    background-color: $laranja;
-  }
-}
-
-.botoes-swiper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 250px;
-  .swiper-pagination {
-    position: static;
-    .swiper-pagination-bullet {
-      border: 2px solid #31306C;
-    }
-    .swiper-pagination-bullet-active {
-      background-color: #31306C;
-    }
-  }
-  .setas-swiper {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-  }
-}
-span .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
-  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
-  display: inline-block;
-  border-radius: 50%;
-  background: var(--swiper-pagination-bullet-inactive-color,$azul-escuro);
-  // /* opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
-  // &:active {
-  //   background-color: $azul-escuro;
-  // }
-}

@@ -1,0 +1,15 @@
+.botao-laranja {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: $laranja;
+  filter: drop-shadow(0px 20px 20px rgba(22, 21, 67, 0.2));
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  img {
+    margin-right: 13.14px;
+  }
+}
