@@ -11,16 +11,27 @@ footer {
     padding-top: 138px;
   }
   .botao-laranja {
-    width: 229px;
+    width: 229px !important;
   }
 }
-
+.links-footer a {
+  width: fit-content;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $laranja;
+  }
+}
 .redes {
   background: linear-gradient(90deg, $azul-escuro -0.7%, $roxo 47.21%, $laranja 98.21%);
   height: 53px;
   .links-redes {
     display: flex;
     gap: 55px;
+    a:hover {
+      path {
+        fill: rgba(255, 255, 255, 0.8);
+      }
+    }
   }
 }
 
@@ -52,6 +63,9 @@ footer {
         &:first-of-type {
           padding-right: 30px;
         }
+        &:hover {
+          color: $laranja;
+        }
       }
     }
   }
@@ -68,4 +82,9 @@ footer {
   bottom: 20px;
   left: 20px;
   z-index: 500;
+  &:hover {
+    rect {
+      fill: #2FDA55;
+    }
+  }
 }

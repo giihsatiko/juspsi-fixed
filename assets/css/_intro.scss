@@ -35,7 +35,12 @@
   gap: 33px;
   .swiper-pagination-bullet {
     border: 1px solid white !important;
+    background-color: transparent;
     opacity: 1;
+    padding: 4px;
+    &:active {
+      border: 1px solid $laranja !important;
+    }
   }
   .swiper-pagination-bullet-active {
     background-color: white !important;
@@ -58,6 +63,11 @@
     display: flex;
     width: fit-content;
     padding-left: 34px;
+    div:hover {
+      path {
+        stroke: $laranja;
+      }
+    }
     .intro-button-prev {
       padding-right: 26px;
     }

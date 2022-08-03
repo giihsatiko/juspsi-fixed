@@ -33,8 +33,12 @@
         gap: 33px;
         padding-right: 34px;
         .swiper-pagination-bullet {
+          padding: 4px;
           border: 1px solid $azul-escuro !important;
           background-color: transparent;
+          &:active {
+            border: 1px solid $laranja !important;
+          }
         }
         .swiper-pagination-bullet-active {
           background-color: $azul-escuro !important;
@@ -43,6 +47,11 @@
       .setas-depoimentos {
         display: flex;
         gap: 26px;
+        div:hover {
+          path {
+            stroke: $laranja;
+          }
+        }
       }
     }
   }
