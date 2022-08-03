@@ -126,47 +126,144 @@
     </div>
     <div class="swiper mySwiper mySwiper-cursos">
       <div class="swiper-wrapper">
-        <?php for ($i = 0; $i < 5; $i++) : ?>
-          <div class="swiper-slide">
-            <div class="principais-cursos">
-              <a href="">
-                <img src="assets/images/cerebro.png" class="img-fluid" alt="cerebro">
-                <div class="cursos-texto">
-                  <span>CURSO ONLINE</span>
-                  <h4>Terapia cognitivo comportamental</h4>
-                  <div class="classificacao">
-                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
-                    <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
-                    <p>4,5</p>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/celebro-lisinho.png" alt="cerebro">
+              <div class="cursos-texto">
+                <span>CURSO ONLINE</span>
+                <h4>Terapia cognitivo comportamental</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>4,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
                   </div>
-                  <div class="beneficios">
-                    <div>
-                      <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
-                      <p>Certificado 4h</p>
-                    </div>
-                    <div>
-                      <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
-                      <p>Zoom</p>
-                    </div>
-                    <div>
-                      <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
-                      <p>R$ <b>99,90</b></p>
-                    </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
                   </div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
-        <?php endfor; ?>
+        </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/violencia-domestica.png" alt="mulher amarrada">
+              <div class="cursos-texto">
+                <span>CURSO ONLINE</span>
+                <h4>Violência Doméstica - Protocolo de atendimento
+                  e acompanhamento</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="meia estrela" class="img-fluid">
+                  <p>5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>359,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/ursinho.png" alt="ursinho de pelúcia">
+              <div class="cursos-texto">
+                <span>CURSO ONLINE</span>
+                <h4>Violência Sexual Infanto-Juvenil</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>3,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 20h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/raciocinio.png" alt="sla">
+              <div class="cursos-texto">
+                <span>CURSO ONLINE</span>
+                <h4>Raciocínio técnico em psicologia</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>4,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="button-next-cursos"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="cursos-button-next"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
         </svg>
       </div>
-      <div class="button-prev-cursos"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="cursos-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 3L3 12L12 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
         </svg></div>
       <div class="swiper-pagination"></div>
@@ -176,25 +273,27 @@
 </main>
 
 
-<aside>
+<section class="vantagem">
   <div class="container-fluid">
     <div class="conheca-container">
-      <img src="assets/images/modelo.png" alt="modelo">
+      <div class="imagem-modelo">
+        <img src="assets/images/modelo.png" alt="modelo">
+      </div>
       <div class="texto-conheca">
         <h1>TRANSFORME SUA VIDA ATRAVÉS DOS CURSOS JUSPSI</h1>
-        <div>
-          <div class="vantagens">
+        <div class="row">
+          <div class="vantagens col-12 col-lg-6 d-flex align-items-center">
             <img src="assets/images/relogio.png" alt="relogio">
             <h3>APRENDA OS CURSOS NO SEU TEMPO</h3>
           </div>
-          <div class="vantagens">
+          <div class="vantagens col-12 col-lg-6 d-flex align-items-center">
             <img src="assets/images/certificado.png" alt="certificado">
             <h3>CERTIFICADOS VÁLIDOS EM TODO O BRASIL</h3>
           </div>
         </div>
         <p>Aprenda tudo que não te ensinaram na faculdade, passo a passo na prática e alcance os melhores resultados
           profissionais</p>
-        <div class="button"><a href="">CONHEÇA A JUSPSI</a></div>
+        <a href="" class="botao-laranja fw-800 fs-14">CONHEÇA A JUSPSI</a>
       </div>
     </div>
   </div>
@@ -221,7 +320,7 @@
       </div>
     </div>
   </div>
-</aside>
+</section>
 <section>
   <div class="container-fluid">
     <div class="container-depoimentos">

@@ -111,24 +111,28 @@ main {
     }
   }
 }
-
+// outra parte main
 .principais-cursos {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  img {
+    max-height: 490px;
+    height: 100%;
+  }
   &:hover {
-    transform: scale(1.2);
-    transition-duration: 1s;
     a > img {
+      transform: scale(1.2);
+      transition-duration: 1s;
       filter: brightness(50%);
     }
   }
-  img {
-    position: relative;
-    height: 490px;
-  }
+
   .cursos-texto {
     position: absolute;
-    left: 10%;
-    z-index: 1;
-    top: 35%;
+    bottom: 0;
+    left: 0;
   }
   a {
     text-decoration: none;

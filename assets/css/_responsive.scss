@@ -4,7 +4,7 @@
     height: 100%;
   }
   .desconto {
-    background-color: #31306C;
+    background-color: #31306c;
     background-image: none;
     text-align: center;
     display: flex;
@@ -42,7 +42,7 @@
     }
     div:nth-of-type(2) {
       background-image: none;
-      background-color: #31306C;
+      background-color: #31306c;
     }
     .nav-item {
       .nav-link {
@@ -86,7 +86,8 @@
   }
   .cursos-itens {
     a {
-      h3,p {
+      h3,
+      p {
         display: none;
       }
     }
@@ -120,13 +121,13 @@
   .swiper-button-next {
     display: none;
   }
-  
+
   .swiper-button-prev {
     display: none;
   }
-  // aside
+  // vantagem
   .conheca-container {
-    &>img {
+    & > img {
       display: none;
     }
     .texto-conheca {
@@ -194,13 +195,13 @@
     display: block;
   }
   .certificacoes-itens {
-    a{
+    a {
       width: 100%;
       display: none;
     }
     .seta-baixo:hover {
       a {
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
       }
     }
@@ -216,7 +217,8 @@
   .contatos ul {
     gap: 38px;
   }
-  .whatsapp, .subir {
+  .whatsapp,
+  .subir {
     display: none;
   }
 }
