@@ -1,206 +1,31 @@
-$roxo: #643A9B;
-$cinza: #E2E2E2 ;
-$branco: #F1F1F1;
-$cinza-escuro: #8B8B8B;
-$laranja: #F07F3C;
-$azul-escuro: #31306C;
-.container-sobre {
+footer {
   background-color: $azul-escuro;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: fit-content;
-  padding-bottom: 50px;
-  .infos {
-    display: flex;
-    justify-content: center;
-    color: white;
-    gap: 40px;
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    width: 230px;
+  }
+  .row {
     padding-top: 138px;
   }
-  .infos-links {
-    max-width: 270px;
-    height: fit-content;
-    background-color: $azul-escuro;
-    .button:not(a,div) {
-      color: $laranja;
-    }
-    &>a,div {
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 24.2px;
-      text-align: left;
-      max-width: 250px;
-    }
-    &>a:hover {
-      color: $laranja;
-    }
-    img {
-      display: none;
-    }
-  }
-  ul {
-    padding-left: 0;
-    background-color: $azul-escuro;
-    padding-bottom: 30px;
-    .titulo-lista {
-      a {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24.2px;
-        text-align: left;
-      }
-    }
-  }
-  ul li {
-    list-style: none;
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 25px;
-      text-align: left;
-    }
-    &:hover a {
-      color: $laranja;
-    }
-  }
-}
-.button:last-of-type a {
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  img {
-    display: block;
-    padding-right: 10px;
-  }
-}
-.show-button {
-  display: none;
-}
-.container-seta {
-  background-color: #F07F3C;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.certificacoes-container {
-  background-color: $branco;
-  margin-top: 75px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h2 {
-    padding-top: 59px;
-    padding-bottom: 16px;
-    color: #565656;
-  }
-  .certificacoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .certificacoes-itens {
-    border-radius: 3px;
-    gap: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &>div {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .botao-laranja {
+    width: 229px;
   }
 }
 
-.politicas-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px 30px;
-  .direitos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    p {
-      color: $cinza-escuro;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 15.23px;
-    }
-  }
-  .politicas {
-    display: flex;
-    align-items: center;
-    padding-left: 106px;
-    gap: 50px;
-    a {
-      text-decoration: none;
-      color: $azul-escuro;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 18.75px;
-      text-align: right;
-      &:hover {
-        color: $laranja;
-      }
-    }
-  }
-}
-
-
-.contatos {
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
+.redes {
+  background: linear-gradient(90deg, $azul-escuro -0.7%, $roxo 47.21%, $laranja 98.21%);
   height: 53px;
-  ul {
+  .links-redes {
     display: flex;
-    padding-left: 0;
-    list-style: none;
-    gap: 60px;
-    justify-self: center;
-    margin: auto;
-    i {
-      color: white;
-    }
-  }
-  .whatsapp {
-    left: 20px;
-    bottom: 20px;
-    position: fixed;
-    z-index: 5;
-    &:hover {
-      filter: brightness(115%);
-    }
-  }
-}
-.subir a {
-  opacity: 0.5;
-  color: $branco;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  transform: rotate(270deg);
-  img {
-    width: 2px;
-    transform: rotate(270deg);
-    margin-left: 60px;
+    gap: 55px;
   }
 }
 
+.zap {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 500;
+}

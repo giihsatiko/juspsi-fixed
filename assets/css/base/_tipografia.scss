@@ -35,10 +35,22 @@
     font-size: 14px;
   }
 }
+.fs-16 {
+  font-size: 16px;
+  a {
+    font-size: 16px;
+  }
+}
 .fs-18 {
   font-size: 18px;
   a {
     font-size: 18px;
+  }
+}
+.fs-20 {
+  font-size: 20px;
+  a {
+    font-size: 20px;
   }
 }
 .fs-24 {
@@ -58,4 +70,10 @@
 }
 .fs-64 {
   font-size: 64px;
+}
+.f-white {
+  color: white;
+  a {
+    color: white;
+  }
 }
