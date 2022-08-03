@@ -29,9 +29,15 @@
       </div>
     </div>
   </div>
+  <div class="descer">
+    <a href="#categorias">
+      <p class="fw-500 fs-12"></p>
+      <span></span>
+    </a>
+  </div>
 </section>
 
-<main>
+<main id="categorias">
   <div class="container-fluid">
     <div class="texto-categorias">
       <h2 class="fw-700 fs-35">PRINCIPAIS CATEGORIAS</h2>
@@ -268,7 +274,7 @@
         </svg></div>
       <div class="swiper-pagination"></div>
     </div>
-    <div class="button"><a href="">VER TODOS OS CURSOS</a></div>
+    <a href="" class="botao-laranja mx-auto">VER TODOS OS CURSOS</a>
   </div>
 </main>
 

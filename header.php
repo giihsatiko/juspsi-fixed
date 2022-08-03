@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="topo">
     <div class="desconto">
       <p class="fw-400 fs-18">Só Hoje! Desconto de 50% nos <a href="#">cursos preparatórios</a> - <span class="fw-900">Termina em 00:58:16h</span></p>
     </div>
@@ -41,7 +41,7 @@
             <p class="fw-600 fs-18">MENU</p>
           </div>
         </div>
-        <div class="links-menu">
+        <div class="links-menu d-none">
           <div class="itens-1 col-12 col-lg-5">
             <div class="links-1 fw-400 fs-18">
               <a href="">

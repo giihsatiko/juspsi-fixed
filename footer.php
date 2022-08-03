@@ -74,6 +74,35 @@
         </div>
       </div>
     </div>
+    <div class="certificacoes-box d-flex align-items-center justify-content-center flex-column">
+      <div class="certificacoes">
+        <h1 class="text-center fw-700 fs-20">CERTIFICAÇÕES</h1>
+        <div class="certificacoes-itens d-flex justify-content-center">
+          <a href=""><img src="assets/images/certificacao.png" alt=""></a>
+          <a href=""><img src="assets/images/certificacao2.png" alt=""></a>
+          <a href=""><img src="assets/images/certificacao3.png" alt=""></a>
+          <a href=""><img src="assets/images/certificacao4.png" alt=""></a>
+          <a href=""><img src="assets/images/certificacao5.png" alt=""></a>
+        </div>
+      </div>
+      <div class="box-info d-flex align-items-center justify-content-evenly">
+        <div class="direitos d-flex align-items-center">
+          <img src="assets/images/logo2.png" alt="logo juspsi">
+          <p class="fw-400 fs-13">2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação
+            <img src="assets/images/logo-oxigenweb.png" alt="logo oxigenweb">
+          </p>
+        </div>
+        <div class="politicas fw-500 fs-16">
+          <a href="">Política de privacidade</a>
+          <a href="">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seta-topo">
+    <a href="#topo">
+      <img src="assets/images/seta-topo.svg" alt="seta para redirecionar ao topo">
+    </a>
   </div>
   <div class="redes d-flex align-items-center">
     <div class="container-fluid">
@@ -119,7 +148,6 @@
 
 <script>
   jQuery('document').ready(function() {
-    jQuery('.links-menu').addClass('d-none');
     jQuery('.menu').on('click', function() {
       if (jQuery('.menu').hasClass('active')) {
         jQuery('.menu').removeClass('active');

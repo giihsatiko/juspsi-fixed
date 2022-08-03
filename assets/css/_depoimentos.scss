@@ -1,11 +1,4 @@
-$roxo: #643a9b;
-$cinza: #e2e2e2;
-$branco: #f1f1f1;
-$cinza-escuro: #8b8b8b;
-$preto: #565656;
-$preto-claro: #878787;
-$laranja: #f07f3c;
-$azul-escuro: #31306c;
+
 
 .depoimentos {
   .botao-laranja {
@@ -20,7 +13,7 @@ $azul-escuro: #31306c;
     justify-content: space-between;
     padding-top: 109px;
     h3 {
-      color: $preto;
+      color: $cinza-escuro;
       font-weight: 700;
       font-size: 35px;
       line-height: 42.36px;
@@ -30,7 +23,7 @@ $azul-escuro: #31306c;
       font-weight: 500;
       font-size: 24px;
       line-height: 28.13px;
-      color: $preto-claro;
+      color: $cinza;
     }
     .paginacao-depoimentos {
       display: flex;
@@ -80,12 +73,12 @@ $azul-escuro: #31306c;
       padding-bottom: 14px;
     }
     p {
-      color: $cinza-escuro;
+      color: #8b8b8b;
       font-weight: 400;
       font-size: 17px;
       line-height: 21px;
       text-align: center;
-      border-bottom: 2px solid $cinza;
+      border-bottom: 2px solid $cinza-claro;
       max-width: 350px;
       height: 250px;
     }
