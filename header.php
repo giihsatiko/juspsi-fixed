@@ -21,7 +21,7 @@
 <body>
   <header>
     <div class="desconto">
-      <p>Só Hoje! Desconto de 50% nos <a href="#">cursos preparatórios</a>-<span>Termina em 00:58:16h</span></p>
+      <p class="fw-400 fs-18">Só Hoje! Desconto de 50% nos <a href="#">cursos preparatórios</a> - <span class="fw-900">Termina em 00:58:16h</span></p>
     </div>
     <div class="container-fluid">
       <div class="nav">

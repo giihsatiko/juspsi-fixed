@@ -1,4 +1,4 @@
-<footer>
+<footer class="my-5">
   <div class="contato">
     <div class="links-rodape container-fluid container-lg">
       <div class="row">
@@ -195,7 +195,7 @@
       spaceBetween: 30
     },
     // when window width is >= 640px
-    1500: {
+    1366: {
       slidesPerView: 4,
     }
   }
@@ -220,8 +220,35 @@
       spaceBetween: 30
     },
     // when window width is >= 640px
-    1500: {
+    1366: {
       slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+  });
+
+  var swiper4 = new Swiper(".mySwiper-depoimentos", {
+    navigation: {
+      nextEl: ".depoimentos-button-next",
+      prevEl: ".depoimentos-button-prev",
+    },
+    pagination: {
+      el: ".depoimentos-pagination",
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1366: {
+      slidesPerView: 3,
       spaceBetween: 30
     }
   }

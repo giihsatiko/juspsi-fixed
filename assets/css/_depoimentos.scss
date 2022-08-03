@@ -1,18 +1,19 @@
-$roxo: #643A9B;
-$cinza: #E2E2E2 ;
-$branco: #F1F1F1;
-$cinza-escuro: #8B8B8B;
+$roxo: #643a9b;
+$cinza: #e2e2e2;
+$branco: #f1f1f1;
+$cinza-escuro: #8b8b8b;
 $preto: #565656;
 $preto-claro: #878787;
-$laranja: #F07F3C;
-$azul-escuro: #31306C;
+$laranja: #f07f3c;
+$azul-escuro: #31306c;
 
-.container-depoimentos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 108px;
+.depoimentos {
+  .botao-laranja {
+    box-shadow: 0px 20px 20px rgba(22, 21, 67, 0.2);
+    border-radius: 100px;
+    width: 339px;
+    margin-top: 57px;
+  }
   .titulo-depoimentos {
     display: flex;
     align-self: flex-start;
@@ -25,11 +26,31 @@ $azul-escuro: #31306C;
       line-height: 42.36px;
     }
     p {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 24px;
       line-height: 28.13px;
       color: $preto-claro;
+    }
+    .paginacao-depoimentos {
+      display: flex;
+      align-items: center;
+      .swiper-pagination-bullets {
+        display: flex;
+        gap: 33px;
+        padding-right: 34px;
+        .swiper-pagination-bullet {
+          border: 1px solid $azul-escuro !important;
+          background-color: transparent;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: $azul-escuro !important;
+        }
+      }
+      .setas-depoimentos {
+        display: flex;
+        gap: 26px;
+      }
     }
   }
   .depoimentos-item {
@@ -40,15 +61,14 @@ $azul-escuro: #31306C;
     border-radius: 20px;
     max-width: 416px;
     height: fit-content;
-    padding-bottom: 57px;
-    padding-top: 50px;
+    box-shadow: 0px 20px 20px rgba(49, 48, 108, 0.2);
     span {
       background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
       width: 100%;
       height: 20px;
       border-radius: 20px 20px 0 0;
     }
-    img {
+    .modelo-depoimento {
       margin-top: -50px;
       height: 100px;
       width: 100px;
@@ -73,6 +93,7 @@ $azul-escuro: #31306C;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 29px 0 37px 0;
       a {
         color: $laranja;
         text-decoration: none;
@@ -86,5 +107,5 @@ $azul-escuro: #31306C;
         width: 8px;
       }
     }
-  }
+  }  
 }
