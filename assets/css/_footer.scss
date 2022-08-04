@@ -53,8 +53,11 @@ footer {
   .box-info {
     p {
       color: #8B8B8B;
+      line-height: 15px;
     }
     .politicas {
+      padding-bottom: 33px;
+      gap: 12px;
       a {
         color: $azul-escuro;
         gap: 30px;

@@ -75,9 +75,10 @@
       </div>
     </div>
     <div class="certificacoes-box d-flex align-items-center justify-content-center flex-column">
-      <div class="certificacoes w-100">
+      <div class="certificacoes d-flex align-items-center flex-column">
         <h1 class="text-center fw-700 fs-20">CERTIFICAÇÕES</h1>
-        <div class="certificacoes-itens d-flex justify-content-center flex-wrap flex-md-nowrap">
+        <a class="seta-certificacoes mx-auto"><img src="assets/images/seta-preta.png" alt="seta apontando para baixo"></a>
+        <div class="certificacoes-itens d-md-flex d-none justify-content-center flex-wrap flex-md-nowrap">
           <a href=""><img src="assets/images/certificacao.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao2.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao3.png" alt=""></a>
@@ -86,9 +87,9 @@
         </div>
       </div>
       <div class="box-info d-flex flex-md-row flex-column align-items-center justify-content-evenly">
-        <div class="direitos d-flex align-items-center flex-md-row flex-column">
+        <div class="direitos d-flex align-items-center">
           <img src="assets/images/logo2.png" alt="logo juspsi">
-          <p class="fw-400 fs-13 text-center">2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação
+          <p class="fw-400 fs-13 text-left text-md-center">2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação
             <img src="assets/images/logo-oxigenweb.png" alt="logo oxigenweb">
           </p>
         </div>
@@ -204,6 +205,18 @@
       } else {
         jQuery('.texto-oculto').addClass('clicado');
         jQuery('.faixa, .texto-aberto4').addClass('d-none');
+      }
+    });
+  });
+
+  jQuery('document').ready(function() {
+    jQuery('.seta-certificacoes').on('click', function() {
+      if (jQuery('.seta-certificacoes').hasClass('certificacoes-aberto')) {
+        jQuery('.seta-certificacoes').removeClass('certificacoes-aberto');
+        jQuery('.certificacoes-itens').addClass('d-none');
+      } else {
+        jQuery('.seta-certificacoes').addClass('certificacoes-aberto');
+        jQuery('.certificacoes-itens').removeClass('d-none');
       }
     });
   });
