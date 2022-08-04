@@ -14,7 +14,7 @@
         </div>
       <?php endfor; ?>
     </div>
-    <div class="paginacao-intro">
+    <div class="paginacao-intro d-none d-md-flex">
       <div class="intro-pagination"></div>
       <div class="setas-intro">
         <div class="intro-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +28,20 @@
         </div>
       </div>
     </div>
+    <div class="paginacao-intro-mobile d-flex d-md-none">
+      <div class="intro-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3L3 12L12 21" stroke="white" stroke-width="3" stroke-linecap="square" />
+        </svg>
+      </div>
+      <div class="intro-pagination"></div>
+      <div class="intro-button-next">
+        <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3L12 12L3 21" stroke="white" stroke-width="3" stroke-linecap="square" />
+        </svg>
+      </div>
+    </div>
   </div>
-  <div class="descer">
+  <div class="descer d-none d-sm-block">
     <a href="#categorias" class="d-flex flex-column align-items-center">
       <p class="fw-500 fs-12">DESCER PÁGINA</p>
       <span class="seta-baixo"></span>
@@ -54,10 +66,11 @@
               <div class="texto-cursos">
                 <h3>Cursos de Direito</h3>
                 <div class="texto-oculto">
-                  <span class="faixa d-none"></span>
-                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
-                    eleifend lacinia.</p>
+                  <p class="texto-aberto d-none">
+                    <span class="faixa d-none"></span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
+                  </p>
                   <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
                 </div>
               </div>
@@ -71,11 +84,12 @@
               <div class="texto-cursos">
                 <h3>Cursos de Psicologia</h3>
                 <div class="texto-oculto">
-                  <span class="faixa d-none"></span>
-                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
-                    eleifend lacinia.</p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                  <p class="texto-aberto2 d-none">
+                    <span class="faixa2 d-none"></span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
+                  </p>
+                  <div class="mais2"><img src="assets/images/mais.png" alt="simbolo mais"></div>
                 </div>
               </div>
             </a>
@@ -88,11 +102,12 @@
               <div class="texto-cursos">
                 <h3>Serviço Social</h3>
                 <div class="texto-oculto">
-                  <span class="faixa d-none"></span>
-                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
-                    eleifend lacinia.</p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                  <p class="texto-aberto3 d-none">
+                    <span class="faixa3 d-none"></span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
+                  </p>
+                  <div class="mais3"><img src="assets/images/mais.png" alt="simbolo mais"></div>
                 </div>
               </div>
             </a>
@@ -105,11 +120,12 @@
               <div class="texto-cursos">
                 <h3>Cursos Preparatórios</h3>
                 <div class="texto-oculto">
-                  <span class="faixa d-none"></span>
-                  <p class="texto-aberto d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet
-                    eleifend lacinia.</p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                  <p class="texto-aberto4 d-none">
+                    <span class="faixa4 d-none"></span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
+                  </p>
+                  <div class="mais4"><img src="assets/images/mais.png" alt="simbolo mais"></div>
                 </div>
               </div>
             </a>
@@ -136,8 +152,11 @@
           <div class="principais-cursos">
             <a href="">
               <img src="assets/images/celebro-lisinho.png" alt="cerebro">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
               <div class="cursos-texto">
-                <span>CURSO ONLINE</span>
                 <h4>Terapia cognitivo comportamental</h4>
                 <div class="classificacao">
                   <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
@@ -169,8 +188,11 @@
           <div class="principais-cursos">
             <a href="">
               <img src="assets/images/violencia-domestica.png" alt="mulher amarrada">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
               <div class="cursos-texto">
-                <span>CURSO ONLINE</span>
                 <h4>Violência Doméstica - Protocolo de atendimento
                   e acompanhamento</h4>
                 <div class="classificacao">
@@ -203,8 +225,11 @@
           <div class="principais-cursos">
             <a href="">
               <img src="assets/images/ursinho.png" alt="ursinho de pelúcia">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
               <div class="cursos-texto">
-                <span>CURSO ONLINE</span>
                 <h4>Violência Sexual Infanto-Juvenil</h4>
                 <div class="classificacao">
                   <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
@@ -235,8 +260,11 @@
           <div class="principais-cursos">
             <a href="">
               <img src="assets/images/raciocinio.png" alt="sla">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
               <div class="cursos-texto">
-                <span>CURSO ONLINE</span>
                 <h4>Raciocínio técnico em psicologia</h4>
                 <div class="classificacao">
                   <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
@@ -282,17 +310,17 @@
 <section class="vantagem">
   <div class="container-fluid">
     <div class="conheca-container">
-      <div class="imagem-modelo">
+      <div class="imagem-modelo  d-none d-block-lg">
         <img src="assets/images/modelo.png" alt="modelo">
       </div>
       <div class="texto-conheca">
         <h1>TRANSFORME SUA VIDA ATRAVÉS DOS CURSOS JUSPSI</h1>
         <div class="row">
-          <div class="vantagens col-12 col-lg-6 d-flex align-items-center">
+          <div class="vantagens col-6 d-flex align-items-center flex-column flex-md-row">
             <img src="assets/images/relogio.png" alt="relogio">
             <h3>APRENDA OS CURSOS NO SEU TEMPO</h3>
           </div>
-          <div class="vantagens col-12 col-lg-6 d-flex align-items-center">
+          <div class="vantagens col-6 d-flex align-items-center flex-column flex-md-row">
             <img src="assets/images/certificado.png" alt="certificado">
             <h3>CERTIFICADOS VÁLIDOS EM TODO O BRASIL</h3>
           </div>
@@ -304,7 +332,7 @@
     </div>
   </div>
 
-  <div class="diferenciais-container">
+  <div class="diferenciais-container d-none d-sm-block">
     <h1>DIFERENCIAS JUSPSI</h1>
     <div class="container-fluid">
       <div class="diferenciais-itens">
@@ -329,7 +357,7 @@
   </div>
 </section>
 
-<section class="depoimentos">
+<section class="depoimentos d-none d-sm-block">
   <div class="container-fluid">
     <div class="swiper mySwiper mySwiper-depoimentos">
       <div class="titulo-depoimentos">

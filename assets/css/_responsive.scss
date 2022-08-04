@@ -1,224 +1,31 @@
-@media (max-width: 576px) {
-  // header
-  .offcanvas {
-    height: 100%;
-  }
+@media (max-width: 575.9px) {
   .desconto {
-    background-color: #31306c;
-    background-image: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    p {
-      font-weight: 400;
+    background-size: 150%;
+    a {
       font-size: 15px;
-      line-height: 18.15px;
-      text-align: center;
-      max-width: 290px;
+    }
+    p {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
     }
   }
-  .container-nav {
-    background-position: center;
-    height: 500px;
+  .menu {
+    margin: 0;
   }
-  .navbar {
-    flex-wrap: nowrap;
-  }
-  .navbar-brand {
-    img {
-      width: 98px;
-    }
-  }
-  .responsive-button {
-    display: none;
-  }
-  .lista {
-    flex-direction: column;
-    height: 100%;
-    div:first-of-type {
-      width: 100%;
-      font-size: 18px;
-      background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
-    }
-    div:nth-of-type(2) {
-      background-image: none;
-      background-color: #31306c;
-    }
-    .nav-item {
-      .nav-link {
-        color: white;
-        &:first-of-type {
-          width: 100%;
-          text-align: center;
-        }
-        &:nth-of-type(2) {
-          font-size: 20px;
-          width: 100%;
-          text-align: center;
-        }
-      }
-    }
-  }
-  .texto-header {
-    div {
+  .bg-intro {
+    .texto-intro {
       h1 {
         font-size: 33px;
-        line-height: 32px;
-        max-width: 290px;
-        padding-bottom: 17px;
       }
       p {
-        max-width: 287px;
-      }
-      .descer {
-        display: none;
+        width: 100%;
       }
     }
   }
-  // main
-  .texto-categorias {
-    h2 {
-      max-width: 290px;
+  .redes {
+    .links-redes {
+      gap: 38px;
     }
-    p {
-      max-width: 290px;
-    }
-  }
-  .cursos-itens {
-    a {
-      h3,
-      p {
-        display: none;
-      }
-    }
-  }
-  .principais-cursos {
-    img {
-      height: 100%;
-      width: 100%;
-    }
-    .cursos-texto {
-      position: sticky;
-    }
-  }
-  .principais-cursos {
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .cursos-texto {
-      h4 {
-        font-size: 20px;
-        padding-bottom: 0;
-      }
-      .beneficios {
-        flex-direction: column;
-      }
-    }
-  }
-  .swiper-button-next {
-    display: none;
-  }
-
-  .swiper-button-prev {
-    display: none;
-  }
-  // vantagem
-  .conheca-container {
-    & > img {
-      display: none;
-    }
-    .texto-conheca {
-      max-width: 289px;
-      h1 {
-        text-align: center;
-      }
-      .vantagens {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3 {
-          text-align: center;
-        }
-      }
-      p {
-        max-width: 291px;
-        text-align: center;
-      }
-    }
-  }
-  .diferenciais-container {
-    display: none;
-  }
-  // footer
-  .infos {
-    flex-direction: column;
-    padding-top: 0;
-    gap: 0;
-    align-items: flex-start;
-  }
-  .container-sobre {
-    .infos-links {
-      img {
-        display: block;
-        margin-right: 10px;
-      }
-      &:hover {
-        img {
-          transition: ease-in-out 0.5s;
-          transform: rotate(180deg);
-        }
-        ul {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-      .button {
-        display: none;
-      }
-      ul {
-        width: 260px;
-        display: none;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        color: white;
-      }
-    }
-  }
-  .show-button {
-    display: block;
-  }
-  .certificacoes-itens {
-    a {
-      width: 100%;
-      display: none;
-    }
-    .seta-baixo:hover {
-      a {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
-  }
-  .politicas-container {
-    flex-direction: column;
-    .politicas {
-      flex-direction: column;
-      padding-left: 0;
-      gap: 20px;
-    }
-  }
-  .contatos ul {
-    gap: 38px;
-  }
-  .whatsapp,
-  .subir {
-    display: none;
   }
 }

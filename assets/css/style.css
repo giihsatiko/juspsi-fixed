@@ -44,6 +44,13 @@
   font-weight: 900;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+.fs-12 a {
+  font-size: 12px;
+}
+
 .fs-13 {
   font-size: 13px;
 }
@@ -125,6 +132,7 @@
 }
 .botao-laranja:hover {
   color: white;
+  background-color: #ff650a;
 }
 
 .desconto {
@@ -175,6 +183,9 @@
   width: 22px;
   height: 22px;
 }
+.nav .itens-nav .lupa:hover {
+  background-color: #ff650a;
+}
 
 .menu {
   cursor: pointer;
@@ -201,15 +212,15 @@
 }
 .menu .burgir .top {
   top: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .menu .burgir .mid {
   top: 7px;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu .burgir .bot {
   bottom: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .menu p {
   width: 54px;
@@ -244,17 +255,21 @@
 }
 .links-menu .itens-2 {
   background: linear-gradient(90deg, rgba(49, 48, 108, 0.99) -0.7%, rgba(100, 58, 155, 0.99) 47.21%, rgba(240, 127, 60, 0.99) 98.21%);
-  backdrop-filter: blur(10px);
+  background-size: 120%;
   height: 100%;
+  backdrop-filter: blur(10px);
 }
-.links-menu .links-1, .links-menu .links-2 {
-  height: 317px;
+.links-menu .links-1,
+.links-menu .links-2 {
   width: fit-content;
   margin-top: 192px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
 }
-.links-menu .links-1 a, .links-menu .links-2 a {
+.links-menu .links-1 a,
+.links-menu .links-2 a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -262,13 +277,16 @@
   color: white;
   width: fit-content;
 }
-.links-menu .links-1 a p, .links-menu .links-2 a p {
+.links-menu .links-1 a p,
+.links-menu .links-2 a p {
   margin-bottom: 0;
 }
-.links-menu .links-1 a img, .links-menu .links-2 a img {
+.links-menu .links-1 a img,
+.links-menu .links-2 a img {
   padding-right: 5px;
 }
-.links-menu .links-1 a:hover, .links-menu .links-2 a:hover {
+.links-menu .links-1 a:hover,
+.links-menu .links-2 a:hover {
   border-bottom: 3px solid #f07f3c;
 }
 
@@ -311,7 +329,12 @@
 }
 .swiper-pagination-bullets .swiper-pagination-bullet {
   border: 1px solid white !important;
+  background-color: transparent;
   opacity: 1;
+  padding: 4px;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet:active {
+  border: 1px solid #f07f3c !important;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: white !important;
@@ -335,12 +358,42 @@
   width: fit-content;
   padding-left: 34px;
 }
+.paginacao-intro .setas-intro div:hover path {
+  stroke: #f07f3c;
+}
 .paginacao-intro .setas-intro .intro-button-prev {
   padding-right: 26px;
 }
 
+.descer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  opacity: 0.5;
+  width: fit-content;
+  height: fit-content;
+}
+.descer a {
+  text-decoration: none;
+  letter-spacing: 0.44em;
+}
+.descer a p {
+  color: white;
+}
+.descer a span {
+  height: 107px;
+  width: 2px;
+  display: block;
+  background-color: white;
+}
+
 main {
   background-color: #31306c;
+}
+main .botao-laranja {
+  width: 295px;
+  margin: 54px 0 86px 0;
 }
 
 .texto-categorias {
@@ -382,13 +435,17 @@ main {
   max-width: 538px;
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
-.cursos-itens .curso-link:hover {
-  transform: scale(1.2);
-  transition-duration: 1s;
+.cursos-itens .curso-link:hover .mais, .cursos-itens .curso-link:hover .mais2, .cursos-itens .curso-link:hover .mais3, .cursos-itens .curso-link:hover .mais4 {
+  background-color: #f07f3c;
+  border-radius: 100%;
+  padding: 15px;
 }
 .cursos-itens .curso-link:hover > img {
+  transition-duration: 1s;
   filter: brightness(50%);
+  transform: scale(1.2);
 }
 .cursos-itens a {
   display: flex;
@@ -403,7 +460,7 @@ main {
   font-size: 29px;
   line-height: 30px;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .texto-cursos {
@@ -412,6 +469,7 @@ main {
   justify-content: center;
   align-items: center;
   position: absolute;
+  bottom: 53px;
 }
 
 .texto-oculto {
@@ -419,24 +477,27 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.texto-oculto .faixa {
+.texto-oculto .faixa, .texto-oculto .faixa2, .texto-oculto .faixa3, .texto-oculto .faixa4 {
   height: 2px;
   width: 31px;
   background-color: #f07f3c;
   border: 2px solid #f07f3c;
+  margin-bottom: 16px;
+  margin: auto;
+  display: block;
 }
-.texto-oculto .mais {
+.texto-oculto .mais, .texto-oculto .mais2, .texto-oculto .mais3, .texto-oculto .mais4 {
   border: 3px solid #f07f3c;
   border-radius: 100%;
   padding: 15px;
   width: fit-content;
   height: fit-content;
 }
-.texto-oculto .mais img {
+.texto-oculto .mais img, .texto-oculto .mais2 img, .texto-oculto .mais3 img, .texto-oculto .mais4 img {
   height: 20px;
   width: 20px;
 }
-.texto-oculto .texto-aberto {
+.texto-oculto .texto-aberto, .texto-oculto .texto-aberto2, .texto-oculto .texto-aberto3, .texto-oculto .texto-aberto4 {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -445,10 +506,9 @@ main {
   padding-bottom: 30px;
   width: 253px;
 }
-.texto-oculto:hover .mais {
-  background-color: #f07f3c;
-  border-radius: 100%;
-  padding: 15px;
+
+.mySwiper-cursos .swiper-slide {
+  border-radius: 20px;
 }
 
 .principais-cursos {
@@ -456,6 +516,7 @@ main {
   overflow: hidden;
   display: block;
   width: 100%;
+  border-radius: 20px;
 }
 .principais-cursos img {
   max-height: 490px;
@@ -466,24 +527,39 @@ main {
   transition-duration: 1s;
   filter: brightness(50%);
 }
-.principais-cursos .cursos-texto {
+.principais-cursos .vagas-limitadas {
+  font-weight: 800;
+  font-size: 12px;
+  color: white;
   position: absolute;
-  bottom: 0;
+  width: 129px;
+  height: 129px;
   left: 0;
+  top: 0;
+  background: linear-gradient(45deg, #31306C 12.87%, #643A9B 47.96%, #F07F3C 85.3%);
+  clip-path: polygon(0 0, 100% 0%, 100% 0, 0 85%);
 }
-.principais-cursos a {
-  text-decoration: none;
-}
-.principais-cursos .cursos-texto span {
+.principais-cursos .curso-online {
   background-color: #ffffff;
   color: #31306c;
   font-weight: 800;
   font-size: 12px;
   text-align: right;
   border-radius: 100px;
-  width: fit-content;
-  margin-left: auto;
+  width: 121px;
+  height: 25px;
   padding: 0 5px;
+  position: absolute;
+  top: 12px;
+  right: 11.8px;
+}
+.principais-cursos a {
+  text-decoration: none;
+}
+.principais-cursos .cursos-texto {
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
 }
 .principais-cursos .cursos-texto h4 {
   color: white;
@@ -491,7 +567,7 @@ main {
   font-size: 23px;
   line-height: 25px;
   text-align: left;
-  max-width: 270px;
+  width: 295px;
 }
 .principais-cursos .cursos-texto p {
   font-weight: 500;
@@ -507,8 +583,8 @@ main {
   color: #f07f3c;
   font-weight: 700;
   font-size: 16px;
-  padding-top: 20px;
-  padding-left: 10px;
+  margin: 0;
+  padding-left: 5px;
 }
 .principais-cursos .cursos-texto .classificacao img {
   height: 25px;
@@ -526,7 +602,7 @@ main {
   align-items: center;
 }
 .principais-cursos .cursos-texto .beneficios div p {
-  padding-top: 15px;
+  margin: 0;
   padding-left: 7px;
 }
 .principais-cursos .cursos-texto .beneficios img {
@@ -556,7 +632,7 @@ main {
 }
 .conheca-container .texto-conheca h1 {
   font-family: 'Inter', sans-serif;
-  color: #8b8b8b;
+  color: #565656;
   font-weight: 700;
   font-size: 35px;
   line-height: 42.36px;
@@ -649,7 +725,7 @@ main {
   padding-top: 109px;
 }
 .depoimentos .titulo-depoimentos h3 {
-  color: #8b8b8b;
+  color: #565656;
   font-weight: 700;
   font-size: 35px;
   line-height: 42.36px;
@@ -671,8 +747,12 @@ main {
   padding-right: 34px;
 }
 .depoimentos .titulo-depoimentos .paginacao-depoimentos .swiper-pagination-bullets .swiper-pagination-bullet {
+  padding: 4px;
   border: 1px solid #31306c !important;
   background-color: transparent;
+}
+.depoimentos .titulo-depoimentos .paginacao-depoimentos .swiper-pagination-bullets .swiper-pagination-bullet:active {
+  border: 1px solid #f07f3c !important;
 }
 .depoimentos .titulo-depoimentos .paginacao-depoimentos .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #31306c !important;
@@ -680,6 +760,9 @@ main {
 .depoimentos .titulo-depoimentos .paginacao-depoimentos .setas-depoimentos {
   display: flex;
   gap: 26px;
+}
+.depoimentos .titulo-depoimentos .paginacao-depoimentos .setas-depoimentos div:hover path {
+  stroke: #f07f3c;
 }
 .depoimentos .depoimentos-item {
   display: flex;
@@ -714,7 +797,7 @@ main {
   font-size: 17px;
   line-height: 21px;
   text-align: center;
-  border-bottom: 2px solid #878787;
+  border-bottom: 2px solid #e2e2e2;
   max-width: 350px;
   height: 250px;
 }
@@ -770,6 +853,7 @@ main {
 
 footer {
   background-color: #31306c;
+  position: relative;
 }
 footer a {
   text-decoration: none;
@@ -781,7 +865,15 @@ footer .row {
   padding-top: 138px;
 }
 footer .botao-laranja {
-  width: 229px;
+  width: 229px !important;
+}
+
+.links-footer a {
+  width: fit-content;
+  border-bottom: 2px solid transparent;
+}
+.links-footer a:hover {
+  border-bottom: 2px solid #f07f3c;
 }
 
 .redes {
@@ -791,6 +883,9 @@ footer .botao-laranja {
 .redes .links-redes {
   display: flex;
   gap: 55px;
+}
+.redes .links-redes a:hover path {
+  fill: rgba(255, 255, 255, 0.8);
 }
 
 .certificacoes-box {
@@ -802,7 +897,7 @@ footer .botao-laranja {
 .certificacoes-box .certificacoes {
   padding-top: 59px;
   padding-bottom: 35px;
-  color: #8b8b8b;
+  color: #565656;
 }
 .certificacoes-box .certificacoes .certificacoes-itens {
   padding-top: 16px;
@@ -820,18 +915,24 @@ footer .botao-laranja {
 .certificacoes-box .box-info .politicas a:first-of-type {
   padding-right: 30px;
 }
+.certificacoes-box .box-info .politicas a:hover {
+  color: #f07f3c;
+}
 
 .seta-topo {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  bottom: 98px;
+  right: 21px;
 }
 
 .zap {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 500;
+  z-index: 3000;
+}
+.zap:hover rect {
+  fill: #2FDA55;
 }
 
 @media (max-width: 576px) {

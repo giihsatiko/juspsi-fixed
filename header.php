@@ -25,10 +25,11 @@
     </div>
     <div class="container-fluid">
       <div class="nav">
-        <a href="index.php" class="img-fluid"><img src="assets/images/logo.png" alt="logo página"></a>
+        <a href="index.php" class="d-none d-md-block"><img src="assets/images/logo.png" alt="logo juspsi"></a>
+        <a href="" class="d-block d-md-none"><img src="assets/images/logo-menor.png" alt="logo juspsi"></a>
         <div class="itens-nav">
-          <a href="#" class="lupa"><img src="assets/images/lupa.png" alt="lupa"></a>
-          <a href="#" class="botao-laranja px-3">
+          <a href="#" class="lupa d-none d-sm-block"><img src="assets/images/lupa.png" alt="lupa"></a>
+          <a href="#" class="botao-laranja px-3 d-none d-sm-block">
             <img src="assets/images/user.png" alt="usuário">
             Login | Criar conta
           </a>
