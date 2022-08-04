@@ -75,16 +75,25 @@
 }
 
 .descer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
   opacity: 0.5;
-  margin-top: -100px;
-  z-index: 800;
-  display: flex;
-  flex-direction: column;
-  span {
-    background-color: white;
-    opacity: 0.5;
-    height: 107px;
-    width: 2px;
-    display: block;
+  width: fit-content;
+  height: fit-content;
+  a {
+    text-decoration: none;
+    letter-spacing: 0.44em;
+    p {
+      color: white;
+    }
+    span {
+      height: 107px;
+      width: 2px;
+      display: block;
+      background-color: white;
+    }
   }
+
 }

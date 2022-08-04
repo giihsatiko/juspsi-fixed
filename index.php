@@ -1,5 +1,5 @@
 <?php include "header.php"; ?>
-<section class="intro">
+<section class="intro position-relative">
   <div class="swiper mySwiper-intro">
     <div class="swiper-wrapper">
       <?php for ($i = 0; $i < 5; $i++) : ?>
@@ -30,9 +30,9 @@
     </div>
   </div>
   <div class="descer">
-    <a href="#categorias">
-      <p class="fw-500 fs-12"></p>
-      <span></span>
+    <a href="#categorias" class="d-flex flex-column align-items-center">
+      <p class="fw-500 fs-12">DESCER PÁGINA</p>
+      <span class="seta-baixo"></span>
     </a>
   </div>
 </section>
@@ -49,7 +49,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="cursos-itens">
-            <a href="#curso-link" class="curso-link">
+            <a class="curso-link">
               <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
                 <h3>Cursos de Direito</h3>
@@ -66,7 +66,7 @@
         </div>
         <div class="swiper-slide">
           <div class="cursos-itens">
-            <a href="#curso-link" class="curso-link">
+            <a class="curso-link">
               <img src="assets/images/psicologia.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
                 <h3>Cursos de Psicologia</h3>
@@ -83,7 +83,7 @@
         </div>
         <div class="swiper-slide">
           <div class="cursos-itens">
-            <a href="#curso-link" class="curso-link">
+            <a class="curso-link">
               <img src="assets/images/servico-social.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
                 <h3>Serviço Social</h3>
@@ -100,7 +100,7 @@
         </div>
         <div class="swiper-slide">
           <div class="cursos-itens">
-            <a href="#curso-link" class="curso-link">
+            <a class="curso-link">
               <img src="assets/images/cursos-preparatorios.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
                 <h3>Cursos Preparatórios</h3>

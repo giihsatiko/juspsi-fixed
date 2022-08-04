@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="links-menu d-none">
-          <div class="itens-1 col-12 col-lg-5">
+          <div class="itens-1 col-12 col-lg-5 d-flex justify-content-center">
             <div class="links-1 fw-400 fs-18">
               <a href="">
                 <img src="assets/images/seta-lado-branca.svg" alt="">
@@ -70,7 +70,7 @@
               </a>
             </div>
           </div>
-          <div class="itens-2 col-12 col-lg-7">
+          <div class="itens-2 col-12 col-lg-7 d-flex justify-content-center">
             <div class="links-2 fw-400 fs-27">
               <a href="">Cursos de Direito</a>
               <a href="">Cursos de Psicologia</a>
