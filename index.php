@@ -64,7 +64,7 @@
             <a class="curso-link">
               <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
-                <h3>Cursos de Direito</h3>
+                <h3 class="d-none d-md-block">Cursos de Direito</h3>
                 <div class="texto-oculto">
                   <p class="texto-aberto d-none">
                     <span class="faixa d-none"></span>
@@ -82,7 +82,7 @@
             <a class="curso-link">
               <img src="assets/images/psicologia.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
-                <h3>Cursos de Psicologia</h3>
+                <h3 class="d-none d-md-block">Cursos de Psicologia</h3>
                 <div class="texto-oculto">
                   <p class="texto-aberto2 d-none">
                     <span class="faixa2 d-none"></span>
@@ -100,7 +100,7 @@
             <a class="curso-link">
               <img src="assets/images/servico-social.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
-                <h3>Serviço Social</h3>
+                <h3 class="d-none d-md-block">Serviço Social</h3>
                 <div class="texto-oculto">
                   <p class="texto-aberto3 d-none">
                     <span class="faixa3 d-none"></span>
@@ -118,7 +118,7 @@
             <a class="curso-link">
               <img src="assets/images/cursos-preparatorios.png" alt="biblioteca" class="img-fluid">
               <div class="texto-cursos">
-                <h3>Cursos Preparatórios</h3>
+                <h3 class="d-none d-md-block">Cursos Preparatórios</h3>
                 <div class="texto-oculto">
                   <p class="texto-aberto4 d-none">
                     <span class="faixa4 d-none"></span>
@@ -132,14 +132,17 @@
           </div>
         </div>
       </div>
-      <div class="setas-categorias d-flex d-lg-none">
-        <div class="button-next-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
+      <div class="setas-categorias d-flex d-lg-none pt-3">
+        <div class="categorias-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L3 12L12 21" stroke="white" stroke-width="3" stroke-linecap="square" />
           </svg>
         </div>
-        <div class="button-prev-categorias"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3L3 12L12 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
-          </svg></div>
+        <div class="categorias-pagination position-unset d-flex justify-content-center align-items-center"></div>
+        <div class="categorias-button-next">
+          <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3L12 12L3 21" stroke="white" stroke-width="3" stroke-linecap="square" />
+          </svg>
+        </div>
       </div>
     </div>
     <div class="texto-categorias">
@@ -292,15 +295,125 @@
             </a>
           </div>
         </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/raciocinio.png" alt="sla">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
+              <div class="cursos-texto">
+                <h4>Raciocínio técnico em psicologia</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>4,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/raciocinio.png" alt="sla">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
+              <div class="cursos-texto">
+                <h4>Raciocínio técnico em psicologia</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>4,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="principais-cursos">
+            <a href="">
+              <img src="assets/images/raciocinio.png" alt="sla">
+              <span class="vagas-limitadas">
+                <p>VAGAS LIMITADAS</p>
+              </span>
+              <span class="curso-online d-flex align-items-center justify-content-center">CURSO ONLINE</span>
+              <div class="cursos-texto">
+                <h4>Raciocínio técnico em psicologia</h4>
+                <div class="classificacao">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                  <img src="assets/images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                  <p>4,5</p>
+                </div>
+                <div class="beneficios">
+                  <div>
+                    <img src="assets/images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                    <p>Certificado 4h</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/camera-zoom.png" alt="camera" class="img-fluid">
+                    <p>Zoom</p>
+                  </div>
+                  <div>
+                    <img src="assets/images/valor.png" alt="cifrao" class="img-fluid">
+                    <p>R$ <b>99,90</b></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="cursos-button-next"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3L12 12L3 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
+      <div class="cursos-button-prev"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="23" fill="white" stroke="white" stroke-width="2" />
+          <path d="M28 16L20 24L28 32" stroke="#31306C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </div>
-      <div class="cursos-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 3L3 12L12 21" stroke="#31306C" stroke-width="3" stroke-linecap="square" />
-        </svg></div>
-      <div class="swiper-pagination"></div>
+      <div class="cursos-button-next"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="23" transform="rotate(-180 24 24)" fill="white" stroke="white" stroke-width="2" />
+          <path d="M20 32L28 24L20 16" stroke="#31306C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
     </div>
     <a href="" class="botao-laranja mx-auto">VER TODOS OS CURSOS</a>
   </div>
@@ -310,7 +423,7 @@
 <section class="vantagem">
   <div class="container-fluid">
     <div class="conheca-container">
-      <div class="imagem-modelo  d-none d-block-lg">
+      <div class="imagem-modelo d-none d-md-block">
         <img src="assets/images/modelo.png" alt="modelo">
       </div>
       <div class="texto-conheca">

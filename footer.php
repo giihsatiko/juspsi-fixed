@@ -77,7 +77,7 @@
     <div class="certificacoes-box d-flex align-items-center justify-content-center flex-column">
       <div class="certificacoes d-flex align-items-center flex-column">
         <h1 class="text-center fw-700 fs-20">CERTIFICAÇÕES</h1>
-        <a class="seta-certificacoes mx-auto"><img src="assets/images/seta-preta.png" alt="seta apontando para baixo"></a>
+        <a class="seta-certificacoes d-block d-md-none"><img src="assets/images/seta-preta.png" alt="seta apontando para baixo"></a>
         <div class="certificacoes-itens d-md-flex d-none justify-content-center flex-wrap flex-md-nowrap">
           <a href=""><img src="assets/images/certificacao.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao2.png" alt=""></a>
@@ -260,9 +260,6 @@
     navigation: {
       nextEl: ".cursos-button-next",
       prevEl: ".cursos-button-prev",
-    },
-    pagination: {
-      el: ".cursos-pagination",
     },
     breakpoints: {
       // when window width is >= 320px

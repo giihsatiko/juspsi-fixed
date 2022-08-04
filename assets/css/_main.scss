@@ -29,11 +29,24 @@ main {
   }
 }
 
+.mySwiper-cursos {
+  position: relative;
+  .cursos-button-prev, .cursos-button-next {
+    position: absolute;
+    z-index: 900;
+  }
+  .cursos-button-prev {
+    top: 50%;
+    left: 0;
+  }
+  .cursos-button-next {
+    top: 50%;
+    right: 0;
+  }
+}
 .cursos-itens {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 538px;
-  height: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
