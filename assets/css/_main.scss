@@ -45,17 +45,8 @@ main {
   }
 }
 .cursos-itens {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   .curso-link {
-    max-height: 538px;
-    height: 100%;
-    max-width: 538px;
-    width: 100%;
     position: relative;
     cursor: pointer;
     &:hover {
@@ -100,7 +91,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .faixa, .faixa2, .faixa3, .faixa4 {
+  .faixa {
     height: 2px;
     width: 31px;
     background-color: $laranja;
@@ -132,11 +123,7 @@ main {
 
 }
 // outra parte main
-.mySwiper-cursos {
-  .swiper-slide {
-    border-radius: 20px;
-  }
-}
+
 .principais-cursos {
   position: relative;
   overflow: hidden;

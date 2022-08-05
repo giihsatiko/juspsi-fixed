@@ -45,14 +45,16 @@ footer {
     padding-bottom: 35px;
     color: $cinza-escuro;
     .certificacoes-itens {
-      padding-top: 16px;
       gap: 13px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
     }
   }
 
   .box-info {
     p {
-      color: #8B8B8B;
+      color: #8b8b8b;
       line-height: 15px;
     }
     .politicas {
@@ -82,7 +84,7 @@ footer {
   z-index: 3000;
   &:hover {
     rect {
-      fill: #2FDA55;
+      fill: #2fda55;
     }
   }
 }

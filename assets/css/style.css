@@ -136,9 +136,9 @@
 }
 
 .desconto {
-  height: 50px;
+  height: 53px;
   text-align: center;
-  background-image: linear-gradient(to right, #31306c, #f07f3c);
+  background: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #F07F3C 98.21%);
   color: #f1f1f1;
   position: fixed;
   top: 0;
@@ -169,7 +169,6 @@
   z-index: 2000;
 }
 .nav .itens-nav .lupa {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f07f3c;
@@ -340,7 +339,7 @@
   background-color: white !important;
 }
 
-.paginacao-intro {
+.paginacao-intro, .paginacao-intro-mobile {
   padding: 0 32px 34px 0;
   position: absolute;
   bottom: 0;
@@ -348,21 +347,26 @@
   max-width: fit-content;
   width: 100%;
   height: fit-content;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 500;
 }
-.paginacao-intro .setas-intro {
+.paginacao-intro .setas-intro, .paginacao-intro-mobile .setas-intro {
   display: flex;
   width: fit-content;
   padding-left: 34px;
 }
-.paginacao-intro .setas-intro div:hover path {
+.paginacao-intro .setas-intro div:hover path, .paginacao-intro-mobile .setas-intro div:hover path {
   stroke: #f07f3c;
 }
-.paginacao-intro .setas-intro .intro-button-prev {
+.paginacao-intro .setas-intro .intro-button-prev, .paginacao-intro-mobile .setas-intro .intro-button-prev {
   padding-right: 26px;
+}
+
+.paginacao-intro-mobile {
+  gap: 15px;
+  left: 50%;
+  transform: translate(-45%, -50%);
 }
 
 .descer {
@@ -419,14 +423,23 @@ main .botao-laranja {
   width: 100%;
 }
 
+.mySwiper-cursos {
+  position: relative;
+}
+.mySwiper-cursos .cursos-button-prev, .mySwiper-cursos .cursos-button-next {
+  position: absolute;
+  z-index: 900;
+}
+.mySwiper-cursos .cursos-button-prev {
+  top: 50%;
+  left: 0;
+}
+.mySwiper-cursos .cursos-button-next {
+  top: 50%;
+  right: 0;
+}
+
 .cursos-itens {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 538px;
-  height: 530px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .cursos-itens .curso-link {
@@ -507,10 +520,6 @@ main .botao-laranja {
   width: 253px;
 }
 
-.mySwiper-cursos .swiper-slide {
-  border-radius: 20px;
-}
-
 .principais-cursos {
   position: relative;
   overflow: hidden;
@@ -528,9 +537,6 @@ main .botao-laranja {
   filter: brightness(50%);
 }
 .principais-cursos .vagas-limitadas {
-  font-weight: 800;
-  font-size: 12px;
-  color: white;
   position: absolute;
   width: 129px;
   height: 129px;
@@ -538,6 +544,15 @@ main .botao-laranja {
   top: 0;
   background: linear-gradient(45deg, #31306C 12.87%, #643A9B 47.96%, #F07F3C 85.3%);
   clip-path: polygon(0 0, 100% 0%, 100% 0, 0 85%);
+}
+.principais-cursos .vagas-limitadas p {
+  font-weight: 800;
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  width: 69px;
+  transform: rotate(-41deg) translate(-10px, 17px);
+  letter-spacing: 2px;
 }
 .principais-cursos .curso-online {
   background-color: #ffffff;
@@ -601,12 +616,14 @@ main .botao-laranja {
   display: flex;
   align-items: center;
 }
+.principais-cursos .cursos-texto .beneficios div:first-of-type, .principais-cursos .cursos-texto .beneficios div:nth-of-type(2) {
+  padding: 16px 0;
+}
 .principais-cursos .cursos-texto .beneficios div p {
   margin: 0;
   padding-left: 7px;
 }
 .principais-cursos .cursos-texto .beneficios img {
-  height: 25px;
   width: 25px;
 }
 
@@ -848,7 +865,6 @@ main .botao-laranja {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 footer {
@@ -903,17 +919,17 @@ footer .botao-laranja {
   padding-top: 16px;
   gap: 13px;
 }
-.certificacoes-box .box-info .direitos {
-  padding-right: 106px;
-}
 .certificacoes-box .box-info p {
   color: #8B8B8B;
+  line-height: 15px;
+}
+.certificacoes-box .box-info .politicas {
+  padding-bottom: 33px;
+  gap: 12px;
 }
 .certificacoes-box .box-info .politicas a {
   color: #31306c;
-}
-.certificacoes-box .box-info .politicas a:first-of-type {
-  padding-right: 30px;
+  gap: 30px;
 }
 .certificacoes-box .box-info .politicas a:hover {
   color: #f07f3c;
@@ -935,212 +951,68 @@ footer .botao-laranja {
   fill: #2FDA55;
 }
 
-@media (max-width: 576px) {
-  .offcanvas {
-    height: 100%;
-  }
-
+@media (max-width: 575.9px) {
   .desconto {
-    background-color: #31306c;
-    background-image: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    background-size: 150%;
+  }
+  .desconto a {
+    font-size: 15px;
   }
   .desconto p {
-    font-weight: 400;
     font-size: 15px;
-    line-height: 18.15px;
-    text-align: center;
-    max-width: 290px;
+    margin: 0;
+    padding: 0;
   }
 
-  .container-nav {
-    background-position: center;
-    height: 500px;
+  .menu {
+    margin: 0;
   }
 
-  .navbar {
-    flex-wrap: nowrap;
-  }
-
-  .navbar-brand img {
-    width: 98px;
-  }
-
-  .responsive-button {
-    display: none;
-  }
-
-  .lista {
-    flex-direction: column;
-    height: 100%;
-  }
-  .lista div:first-of-type {
-    width: 100%;
-    font-size: 18px;
-    background-image: linear-gradient(to right, #31306c, #643A9B, #f07f3c);
-  }
-  .lista div:nth-of-type(2) {
-    background-image: none;
-    background-color: #31306c;
-  }
-  .lista .nav-item .nav-link {
-    color: white;
-  }
-  .lista .nav-item .nav-link:first-of-type {
-    width: 100%;
-    text-align: center;
-  }
-  .lista .nav-item .nav-link:nth-of-type(2) {
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .texto-header div h1 {
+  .bg-intro .texto-intro h1 {
     font-size: 33px;
-    line-height: 32px;
-    max-width: 290px;
-    padding-bottom: 17px;
   }
-  .texto-header div p {
-    max-width: 287px;
-  }
-  .texto-header div .descer {
-    display: none;
-  }
-
-  .texto-categorias h2 {
-    max-width: 290px;
-  }
-  .texto-categorias p {
-    max-width: 290px;
-  }
-
-  .cursos-itens a h3,
-  .cursos-itens a p {
-    display: none;
-  }
-
-  .principais-cursos img {
-    height: 100%;
+  .bg-intro .texto-intro p {
     width: 100%;
   }
-  .principais-cursos .cursos-texto {
-    position: sticky;
-  }
 
-  .principais-cursos a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .conheca-container {
+    padding-top: 0;
+    padding-bottom: 35px;
   }
-  .principais-cursos .cursos-texto h4 {
-    font-size: 20px;
-    padding-bottom: 0;
-  }
-  .principais-cursos .cursos-texto .beneficios {
-    flex-direction: column;
-  }
-
-  .swiper-button-next {
-    display: none;
-  }
-
-  .swiper-button-prev {
-    display: none;
-  }
-
-  .conheca-container > img {
-    display: none;
-  }
-  .conheca-container .texto-conheca {
-    max-width: 289px;
-  }
-  .conheca-container .texto-conheca h1 {
-    text-align: center;
-  }
-  .conheca-container .texto-conheca .vantagens {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  .conheca-container .texto-conheca h1,
+  .conheca-container .texto-conheca p,
   .conheca-container .texto-conheca .vantagens h3 {
     text-align: center;
   }
-  .conheca-container .texto-conheca p {
-    max-width: 291px;
-    text-align: center;
+  .conheca-container .texto-conheca .botao-laranja {
+    align-self: center;
   }
 
-  .diferenciais-container {
-    display: none;
+  .certificacoes-box .certificacoes {
+    padding: 0;
+    margin-top: 17px;
+    border: 2px solid #c4c4c4;
+    border-radius: 9px;
+    width: calc(100% - 10%);
+  }
+  .certificacoes-box .certificacoes h1 {
+    padding-top: 21px;
+  }
+  .certificacoes-box .certificacoes .seta-certificacoes {
+    padding: 15px;
+  }
+  .certificacoes-box .direitos {
+    padding-top: 30px;
+    width: calc(100% - 10%);
+  }
+  .certificacoes-box .direitos p {
+    padding-left: 11.73px;
   }
 
-  .infos {
-    flex-direction: column;
-    padding-top: 0;
-    gap: 0;
-    align-items: flex-start;
+  .redes {
+    background-size: 150%;
   }
-
-  .container-sobre .infos-links img {
-    display: block;
-    margin-right: 10px;
-  }
-  .container-sobre .infos-links:hover img {
-    transition: ease-in-out 0.5s;
-    transform: rotate(180deg);
-  }
-  .container-sobre .infos-links:hover ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-sobre .infos-links .button {
-    display: none;
-  }
-  .container-sobre .infos-links ul {
-    width: 260px;
-    display: none;
-  }
-  .container-sobre .infos-links a {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-
-  .show-button {
-    display: block;
-  }
-
-  .certificacoes-itens a {
-    width: 100%;
-    display: none;
-  }
-  .certificacoes-itens .seta-baixo:hover a {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .politicas-container {
-    flex-direction: column;
-  }
-  .politicas-container .politicas {
-    flex-direction: column;
-    padding-left: 0;
-    gap: 20px;
-  }
-
-  .contatos ul {
+  .redes .links-redes {
     gap: 38px;
-  }
-
-  .whatsapp,
-  .subir {
-    display: none;
   }
 }

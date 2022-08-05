@@ -78,7 +78,7 @@
       <div class="certificacoes d-flex align-items-center flex-column">
         <h1 class="text-center fw-700 fs-20">CERTIFICAÇÕES</h1>
         <a class="seta-certificacoes d-block d-md-none"><img src="assets/images/seta-preta.png" alt="seta apontando para baixo"></a>
-        <div class="certificacoes-itens d-md-flex d-none justify-content-center flex-wrap flex-md-nowrap">
+        <div class="certificacoes-itens justify-content-center flex-wrap flex-md-nowrap">
           <a href=""><img src="assets/images/certificacao.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao2.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao3.png" alt=""></a>
@@ -148,10 +148,12 @@
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 
 
 <script>
+  // menu
   jQuery('document').ready(function() {
     jQuery('.menu').on('click', function() {
       if (jQuery('.menu').hasClass('active')) {
@@ -166,59 +168,20 @@
     });
   });
 
-  jQuery('document').ready(function() {
-    jQuery('.mais').on('click', function() {
-      if (jQuery('.texto-oculto').hasClass('clicado')) {
-        jQuery('.texto-oculto').removeClass('clicado');
-        jQuery('.faixa, .texto-aberto').removeClass('d-none');
-        jQuery('.texto-aberto2, .texto-aberto3, .texto-aberto4').addClass('d-none');
-      } else {
-        jQuery('.texto-oculto').addClass('clicado');
-        jQuery('.faixa, .texto-aberto').addClass('d-none');
-      }
-    });
-    jQuery('.mais2').on('click', function() {
-      if (jQuery('.texto-oculto').hasClass('clicado')) {
-        jQuery('.texto-oculto').removeClass('clicado');
-        jQuery('.faixa, .texto-aberto2').removeClass('d-none');
-        jQuery('.texto-aberto, .texto-aberto3, .texto-aberto4').addClass('d-none');
-      } else {
-        jQuery('.texto-oculto').addClass('clicado');
-        jQuery('.faixa, .texto-aberto2').addClass('d-none');
-      }
-    });
-    jQuery('.mais3').on('click', function() {
-      if (jQuery('.texto-oculto').hasClass('clicado')) {
-        jQuery('.texto-oculto').removeClass('clicado');
-        jQuery('.faixa, .texto-aberto3').removeClass('d-none');
-        jQuery('.texto-aberto, .texto-aberto2, .texto-aberto4').addClass('d-none');
-      } else {
-        jQuery('.texto-oculto').addClass('clicado');
-        jQuery('.faixa, .texto-aberto3').addClass('d-none');
-      }
-    });
-    jQuery('.mais4').on('click', function() {
-      if (jQuery('.texto-oculto').hasClass('clicado')) {
-        jQuery('.texto-oculto').removeClass('clicado');
-        jQuery('.faixa, .texto-aberto4').removeClass('d-none');
-        jQuery('.texto-aberto, .texto-aberto2, .texto-aberto3').addClass('d-none');
-      } else {
-        jQuery('.texto-oculto').addClass('clicado');
-        jQuery('.faixa, .texto-aberto4').addClass('d-none');
-      }
-    });
-  });
+  // swiper
+  jQuery('.mais').on('click', function() {
+    jQuery(this).parent().find('p').toggleClass('d-none');
+  })
 
-  jQuery('document').ready(function() {
-    jQuery('.seta-certificacoes').on('click', function() {
-      if (jQuery('.seta-certificacoes').hasClass('certificacoes-aberto')) {
-        jQuery('.seta-certificacoes').removeClass('certificacoes-aberto');
-        jQuery('.certificacoes-itens').addClass('d-none');
-      } else {
-        jQuery('.seta-certificacoes').addClass('certificacoes-aberto');
-        jQuery('.certificacoes-itens').removeClass('d-none');
-      }
+  // footer
+  $('.certificacoes').on('click', function() {
+  if ($('.certificacoes-itens').attr('style')) {
+    $('.certificacoes-itens').removeAttr('style');
+  } else {
+    $('.certificacoes-itens').css({
+      'max-height': $('.certificacoes-itens').prop('scrollHeight') + 'px'
     });
+  }
   });
 
   var swiper1 = new Swiper(".mySwiper-intro", {
@@ -240,17 +203,10 @@
       el: ".categorias-pagination",
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      // when window width is >= 480px
-      480: {
         slidesPerView: 3,
         spaceBetween: 30
       },
-      // when window width is >= 640px
       1366: {
         slidesPerView: 4,
       }
@@ -262,17 +218,14 @@
       prevEl: ".cursos-button-prev",
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      // when window width is >= 480px
       480: {
         slidesPerView: 3,
         spaceBetween: 30
       },
-      // when window width is >= 640px
       1366: {
         slidesPerView: 4,
         spaceBetween: 30
