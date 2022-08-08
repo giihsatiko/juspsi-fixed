@@ -1,6 +1,6 @@
 <footer class="mt-5">
   <div class="container-lg container-fluid">
-    <div class="row">
+    <div class="row links-footer">
       <div class="col-12 col-lg-3 f-white">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
@@ -251,7 +251,8 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        centeredSlides: true,
+        slidesPerView: 2,
         spaceBetween: 20
       },
       1200: {

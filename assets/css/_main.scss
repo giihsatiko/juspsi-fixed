@@ -5,7 +5,12 @@ main {
     margin: 54px 0 86px 0;
   }
 }
-
+.mySwiper-categorias {
+  .swiper-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
 .texto-categorias {
   padding-top: 110px;
   display: flex;
@@ -39,6 +44,10 @@ main {
   .cursos-button-prev, .cursos-button-next {
     position: absolute;
     z-index: 900;
+    &:hover circle {
+      fill: $laranja;
+      stroke: $laranja;
+    }
   }
   .cursos-button-prev {
     top: 50%;
@@ -100,10 +109,11 @@ main {
     height: 2px;
     width: 31px;
     background-color: $laranja;
-    border: 2px solid $laranja;
+    border: 1px solid $laranja;
     margin-bottom: 16px;
     margin: auto;
     display: block;
+    margin-bottom: 16px;
   }
   .mais, .mais2, .mais3, .mais4 {
     border: 3px solid $laranja;
