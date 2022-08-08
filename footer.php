@@ -2,8 +2,11 @@
   <div class="container-lg container-fluid">
     <div class="links-footer row">
       <div id="institucional" class="col-12 col-lg-3 f-white">
-        <h2 class="fw-700 fs-20">INSTITUCIONAL</h2>
-        <div class="d-flex flex-column fw-400 fs-16">
+        <div id="links-footer" class="d-flex align-items-center">
+          <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
+          <h2 class="fw-700 fs-20">INSTITUCIONAL</h2>
+        </div>
+        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
           <a href="">A empresa</a>
           <a href="">Novidades</a>
           <a href="">Materiais gratuitos</a>
@@ -12,50 +15,63 @@
         </div>
       </div>
       <div id="cursos-preparatorios" class="col-12 col-lg-3 f-white">
-        <h2 class="fw-700 fs-20">CURSOS PREPARATÓRIOS</h2>
-        <div class="d-flex flex-column fw-400 fs-16">
+        <div id="links-footer" class="d-flex align-items-center">
+          <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
+          <h2 class="fw-700 fs-20">CURSOS PREPARATÓRIOS</h2>
+        </div>
+        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
           <a href="">Presenciais</a>
           <a href="">Telepresenciais</a>
           <a href="">Simulados online</a>
         </div>
       </div>
       <div id="para-empresa" class="col-12 col-lg-3 f-white">
-        <h2 class="fw-700 fs-20">PARA SUA EMPRESA</h2>
-        <div class="d-flex flex-column fw-400 fs-16">
-          <h3 class="fw-700 fs-16">EMPRESAS PÚBLICAS</h3>
-          <a href="">Cursos e treinamentos</a>
-          <a href="">Assessoria tecnica</a>
+        <div id="links-footer" class="d-flex align-items-center">
+          <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
+          <h2 class="fw-700 fs-20">PARA SUA EMPRESA</h2>
         </div>
-        <div class="d-flex flex-column fw-400 fs-16 mt-3">
-          <h3 class="fw-700 fs-16">EMPRESAS PRIVADAS</h3>
-          <a href="">Cursos e treinamentos</a>
-          <a href="">Assessoria tecnica</a>
+        <div id="itens-footer">
+          <div class="d-flex flex-column fw-400 fs-16">
+            <h3 class="fw-700 fs-16">EMPRESAS PÚBLICAS</h3>
+            <a href="">Cursos e treinamentos</a>
+            <a href="">Assessoria tecnica</a>
+          </div>
+          <div class="d-flex flex-column fw-400 fs-16 mt-3">
+            <h3 class="fw-700 fs-16">EMPRESAS PRIVADAS</h3>
+            <a href="">Cursos e treinamentos</a>
+            <a href="">Assessoria tecnica</a>
+          </div>
         </div>
       </div>
       <div id="cursos" class="col-12 col-lg-3 f-white">
-        <h2 class="fw-700 fs-20">CURSOS</h2>
-        <div>
-          <h3 class="fw-700 fs-16">DIREITO</h3>
-          <div class="d-flex flex-column fw-400 fs-16">
-            <a href="">Clubes de assinatura</a>
-            <a href="">Cursos presenciais</a>
-            <a href="">Cursos online</a>
-          </div>
+        <div id="links-footer" class="d-flex align-items-center">
+          <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
+          <h2 class="fw-700 fs-20">CURSOS</h2>
         </div>
-        <div class="mt-3">
-          <h3 class="fw-700 fs-16">PSICOLOGIA</h3>
-          <div class="d-flex flex-column fw-400 fs-16">
-            <a href="">Clubes de assinatura</a>
-            <a href="">Cursos presenciais</a>
-            <a href="">Cursos online</a>
+        <div id="itens-footer">
+          <div>
+            <h3 class="fw-700 fs-16">DIREITO</h3>
+            <div class="d-flex flex-column fw-400 fs-16">
+              <a href="">Clubes de assinatura</a>
+              <a href="">Cursos presenciais</a>
+              <a href="">Cursos online</a>
+            </div>
           </div>
-        </div>
-        <div class="mt-3">
-          <h3 class="fw-700 fs-16">SERVIÇO SOCIAL</h3>
-          <div class="d-flex flex-column fw-400 fs-16">
-            <a href="">Clubes de assinatura</a>
-            <a href="">Cursos presenciais</a>
-            <a href="">Cursos online</a>
+          <div class="mt-3">
+            <h3 class="fw-700 fs-16">PSICOLOGIA</h3>
+            <div class="d-flex flex-column fw-400 fs-16">
+              <a href="">Clubes de assinatura</a>
+              <a href="">Cursos presenciais</a>
+              <a href="">Cursos online</a>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h3 class="fw-700 fs-16">SERVIÇO SOCIAL</h3>
+            <div class="d-flex flex-column fw-400 fs-16">
+              <a href="">Clubes de assinatura</a>
+              <a href="">Cursos presenciais</a>
+              <a href="">Cursos online</a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,8 +82,11 @@
         </a>
       </div>
       <div id="coaching" class="col-12 col-lg-3 f-white">
-        <h2 class="fw-700 fs-20">COACHING E INTELIGÊNCIA EMOCIONAL</h2>
-        <div class="d-flex flex-column fw-400 fs-16">
+        <div id="links-footer" class="d-flex align-items-center">
+          <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
+          <h2 class="fw-700 fs-20">COACHING E INTELIGÊNCIA EMOCIONAL</h2>
+        </div>
+        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
           <a href="">Coaching para concursos públicos</a>
           <a href="">Coaching de carreira</a>
           <a href="">Inteligência emocional</a>
@@ -78,7 +97,7 @@
       <div class="certificacoes d-flex align-items-center flex-column">
         <h1 class="text-center fw-700 fs-20">CERTIFICAÇÕES</h1>
         <a class="seta-certificacoes d-block d-md-none"><img src="assets/images/seta-preta.png" alt="seta apontando para baixo"></a>
-        <div class="certificacoes-itens justify-content-center flex-wrap flex-md-nowrap">
+        <div class="certificacoes-itens d-flex justify-content-center flex-wrap flex-md-nowrap">
           <a href=""><img src="assets/images/certificacao.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao2.png" alt=""></a>
           <a href=""><img src="assets/images/certificacao3.png" alt=""></a>
@@ -170,18 +189,32 @@
 
   // swiper
   jQuery('.mais').on('click', function() {
+    if (jQuery(this).parent().find('p').hasClass('d-none')) {
+      jQuery('.texto-oculto').find('p').addClass('d-none');
+    }
     jQuery(this).parent().find('p').toggleClass('d-none');
-  })
+  });
+
+  // links-footer 
+  // jQuery('#links-footer').on('click', function() {
+  //   if (jQuery('#itens-footer').attr('style')) {
+  //     jQuery('.#itens-footer').removeAttr('style');
+  //   } else {
+  //     jQuery('#itens-footer').css({
+  //       'max-height': jQuery('#itens-footer').prop('scrollHeight') + 'px'
+  //     });
+  //   }
+  // });
 
   // footer
   $('.certificacoes').on('click', function() {
-  if ($('.certificacoes-itens').attr('style')) {
-    $('.certificacoes-itens').removeAttr('style');
-  } else {
-    $('.certificacoes-itens').css({
-      'max-height': $('.certificacoes-itens').prop('scrollHeight') + 'px'
-    });
-  }
+    if ($('.certificacoes-itens').attr('style')) {
+      $('.certificacoes-itens').removeAttr('style');
+    } else {
+      $('.certificacoes-itens').css({
+        'max-height': $('.certificacoes-itens').prop('scrollHeight') + 'px'
+      });
+    }
   });
 
   var swiper1 = new Swiper(".mySwiper-intro", {
@@ -204,10 +237,10 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 3,
-        spaceBetween: 30
+        slidesPerView: 2,
+        spaceBetween: 16
       },
-      1366: {
+      1200: {
         slidesPerView: 4,
       }
     }
@@ -219,14 +252,10 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20
       },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      },
-      1366: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 30
       }
@@ -254,7 +283,7 @@
         spaceBetween: 30
       },
       // when window width is >= 640px
-      1366: {
+      1200: {
         slidesPerView: 3,
         spaceBetween: 30
       }
