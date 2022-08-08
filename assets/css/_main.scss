@@ -34,6 +34,7 @@ main {
   .swiper-slide {
     border-radius: 20px;
     overflow: hidden;
+    background-color: $azul-escuro;
   }
   .cursos-button-prev, .cursos-button-next {
     position: absolute;
@@ -124,7 +125,6 @@ main {
     padding-bottom: 30px;
     width: 253px;
   }
-
 }
 
 // section cursos
