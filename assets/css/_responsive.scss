@@ -121,6 +121,16 @@
     padding-top: 104px;
   }
   // footer
+  .toggle-footer {
+    border-bottom: 1px solid #643A9B;
+    height: 78px;
+    gap: 17px;
+  }
+  .itens-footer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
   .certificacoes-box {
     .certificacoes {
       padding: 0;

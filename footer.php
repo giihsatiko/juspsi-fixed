@@ -1,12 +1,12 @@
 <footer class="mt-5">
   <div class="container-lg container-fluid">
-    <div class="links-footer row">
-      <div id="institucional" class="col-12 col-lg-3 f-white">
-        <div id="links-footer" class="d-flex align-items-center">
+    <div class="row">
+      <div class="col-12 col-lg-3 f-white">
+        <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">INSTITUCIONAL</h2>
         </div>
-        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
+        <div class="d-flex flex-column fw-400 fs-16 itens-footer">
           <a href="">A empresa</a>
           <a href="">Novidades</a>
           <a href="">Materiais gratuitos</a>
@@ -14,23 +14,23 @@
           <a href="">Contato</a>
         </div>
       </div>
-      <div id="cursos-preparatorios" class="col-12 col-lg-3 f-white">
-        <div id="links-footer" class="d-flex align-items-center">
+      <div class="col-12 col-lg-3 f-white">
+        <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">CURSOS PREPARATÓRIOS</h2>
         </div>
-        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
+        <div class="d-flex flex-column fw-400 fs-16 itens-footer">
           <a href="">Presenciais</a>
           <a href="">Telepresenciais</a>
           <a href="">Simulados online</a>
         </div>
       </div>
-      <div id="para-empresa" class="col-12 col-lg-3 f-white">
-        <div id="links-footer" class="d-flex align-items-center">
+      <div class="col-12 col-lg-3 f-white">
+        <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">PARA SUA EMPRESA</h2>
         </div>
-        <div id="itens-footer">
+        <div class="itens-footer">
           <div class="d-flex flex-column fw-400 fs-16">
             <h3 class="fw-700 fs-16">EMPRESAS PÚBLICAS</h3>
             <a href="">Cursos e treinamentos</a>
@@ -43,12 +43,12 @@
           </div>
         </div>
       </div>
-      <div id="cursos" class="col-12 col-lg-3 f-white">
-        <div id="links-footer" class="d-flex align-items-center">
+      <div class="col-12 col-lg-3 f-white">
+        <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">CURSOS</h2>
         </div>
-        <div id="itens-footer">
+        <div class="itens-footer">
           <div>
             <h3 class="fw-700 fs-16">DIREITO</h3>
             <div class="d-flex flex-column fw-400 fs-16">
@@ -81,12 +81,12 @@
           Login | Criar conta
         </a>
       </div>
-      <div id="coaching" class="col-12 col-lg-3 f-white">
-        <div id="links-footer" class="d-flex align-items-center">
+      <div class="col-12 col-lg-3 f-white itens-footer">
+        <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">COACHING E INTELIGÊNCIA EMOCIONAL</h2>
         </div>
-        <div class="d-flex flex-column fw-400 fs-16" id="itens-footer">
+        <div class="d-flex flex-column fw-400 fs-16 itens-footer">
           <a href="">Coaching para concursos públicos</a>
           <a href="">Coaching de carreira</a>
           <a href="">Inteligência emocional</a>
@@ -195,24 +195,23 @@
     jQuery(this).parent().find('p').toggleClass('d-none');
   });
 
-  // links-footer 
-  // jQuery('#links-footer').on('click', function() {
-  //   if (jQuery('#itens-footer').attr('style')) {
-  //     jQuery('.#itens-footer').removeAttr('style');
-  //   } else {
-  //     jQuery('#itens-footer').css({
-  //       'max-height': jQuery('#itens-footer').prop('scrollHeight') + 'px'
-  //     });
-  //   }
-  // });
+  jQuery('.toggle-footer').on('click', function() {
+    if (jQuery('.itens-footer').attr('style')) {
+      jQuery('.itens-footer').removeAttr('style');
+    } else {
+      jQuery('.itens-footer').css({
+        'max-height': jQuery('.itens-footer').prop('scrollHeight') + 'px'
+      });
+    }
+  });
 
   // footer
-  $('.certificacoes').on('click', function() {
-    if ($('.certificacoes-itens').attr('style')) {
-      $('.certificacoes-itens').removeAttr('style');
+  jQuery('.certificacoes').on('click', function() {
+    if (jQuery('.certificacoes-itens').attr('style')) {
+      jQuery('.certificacoes-itens').removeAttr('style');
     } else {
-      $('.certificacoes-itens').css({
-        'max-height': $('.certificacoes-itens').prop('scrollHeight') + 'px'
+      jQuery('.certificacoes-itens').css({
+        'max-height': jQuery('.certificacoes-itens').prop('scrollHeight') + 'px'
       });
     }
   });

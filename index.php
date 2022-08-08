@@ -17,7 +17,8 @@
               <div class="texto-cursos">
                 <h3 class="d-none d-md-block">Cursos de Direito</h3>
                 <div class="texto-oculto">
-                  <p class="d-none" <span class="faixa"></span>
+                <p class="d-none">
+                    <span class="faixa"></span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
                     semper, elit quam cursus nibh, sed varius nisi risus in leo.
                   </p>
