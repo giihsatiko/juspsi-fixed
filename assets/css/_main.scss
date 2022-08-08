@@ -31,6 +31,10 @@ main {
 
 .mySwiper-cursos {
   position: relative;
+  .swiper-slide {
+    border-radius: 20px;
+    overflow: hidden;
+  }
   .cursos-button-prev, .cursos-button-next {
     position: absolute;
     z-index: 900;
@@ -133,9 +137,8 @@ main {
     overflow: hidden;
     display: block;
     width: 100%;
-    img {
-      max-height: 490px;
-      height: 100%;
+    &>img {
+      height: 490px;
     }
     &:hover {
       a > img {

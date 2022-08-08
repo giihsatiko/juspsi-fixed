@@ -69,7 +69,18 @@
                 <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>CONTATO</p>
               </a>
+              <div class="d-flex d-md-none">
+                <a href="#" class="lupa d-none d-sm-flex"><img src="assets/images/lupa.png" alt="lupa"></a>
+                <a href="#" class="botao-laranja px-3 d-none d-sm-flex">
+                  <img src="assets/images/user.png" alt="usuário">
+                  Login | Criar conta
+                </a>
+              </div>
             </div>
+            <!-- <div class="d-flex d-md-none">
+              <a href="#" class="lupa d-flex align-items-center d-sm-none"><img src="assets/images/lupa.png" alt="lupa"></a>
+              <a href="#" class="botao-laranja px-3 d-flex d-sm-none">
+            </div> -->
           </div>
           <div class="itens-2 col-12 col-lg-7 d-flex justify-content-center">
             <div class="links-2 fw-400 fs-27">
@@ -81,7 +92,9 @@
               <a href="">Cursos Para sua Empresa</a>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </header>
