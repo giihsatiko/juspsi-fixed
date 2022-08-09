@@ -46,12 +46,14 @@
         background-color: $laranja-escuro;
       }
     }
+    .botao-laranja {
+      margin-right: 30px;
+    }
   }
 }
 
 .menu {
   cursor: pointer;
-  margin-left: 30px;
   width: 133px;
   height: 45px;
   background-color: white;

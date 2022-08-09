@@ -20,7 +20,7 @@
 
 <body>
   <header id="topo">
-    <div class="desconto">
+    <div class="desconto d-flex align-items-center justify-content-center">
       <p class="fw-400 fs-18">Só Hoje! Desconto de 50% nos <a href="#">cursos preparatórios</a> - <span class="fw-900">Termina em 00:58:16h</span></p>
     </div>
     <div class="container-fluid">
@@ -69,7 +69,7 @@
                 <img src="assets/images/seta-lado-branca.svg" alt="">
                 <p>CONTATO</p>
               </a>
-              <div class="d-flex d-md-none">
+              <div class="d-flex d-sm-none">
                 <a href="#" class="lupa d-none d-sm-flex"><img src="assets/images/lupa.png" alt="lupa"></a>
                 <a href="#" class="botao-laranja px-3 d-none d-sm-flex">
                   <img src="assets/images/user.png" alt="usuário">

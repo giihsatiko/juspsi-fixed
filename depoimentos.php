@@ -1,8 +1,8 @@
-<section class="depoimentos d-none d-sm-block">
+<section class="depoimentos d-none d-sm-block py-5">
   <div class="container-fluid">
     <div class="swiper mySwiper mySwiper-depoimentos">
-      <div class="titulo-depoimentos">
-        <div>
+      <div class="titulo-depoimentos d-flex flex-sm-column align-self-start justify-content-between">
+        <div class="text-sm-center">
           <h3>DEPOIMENTOS</h3>
           <p>Opinião de nossos alunos sobre os cursos JUSPSI</p>
         </div>

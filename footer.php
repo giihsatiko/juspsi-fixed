@@ -1,4 +1,4 @@
-<footer class="mt-5">
+<footer>
   <div class="container-lg container-fluid">
     <div class="row links-footer">
       <div class="col-12 col-md-3 f-white">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-3 d-none d-sm-block">
+      <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
         <a href="" class="botao-laranja fw-600 fs-16">
           <img src="assets/images/user.png" alt="usuário">
           Login | Criar conta
@@ -272,7 +272,7 @@
       clickable: true,
     },
     breakpoints: {
-      320: {
+      575.9: {
         slidesPerView: 2,
         spaceBetween: 20
       },
