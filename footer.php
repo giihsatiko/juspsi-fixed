@@ -105,7 +105,7 @@
           <a href=""><img src="assets/images/certificacao5.png" alt=""></a>
         </div>
       </div>
-      <div class="box-info d-flex flex-md-row flex-column align-items-center justify-content-evenly">
+      <div class="box-info d-flex flex-md-row flex-column align-items-center justify-content-around w-100">
         <div class="direitos d-flex align-items-center">
           <img src="assets/images/logo2.png" alt="logo juspsi">
           <p class="fw-400 fs-13 text-left text-md-center">2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação
@@ -272,17 +272,16 @@
       clickable: true,
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      // when window width is >= 480px
+
       480: {
         slidesPerView: 3,
         spaceBetween: 30
       },
-      // when window width is >= 640px
+
       1200: {
         slidesPerView: 3,
         spaceBetween: 30

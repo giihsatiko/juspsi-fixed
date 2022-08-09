@@ -92,11 +92,16 @@
       background-color: $azul-escuro;
       img {
         height: 187.41px;
+        width: 220px;
         border-radius: 20px;
       }
       .cursos-texto {
         position: unset;
         padding-top: 20px;
+        width: 220px !important;
+        h4 {
+          width: fit-content;
+        }
         .beneficios {
           flex-direction: column;
           padding-bottom: 0;
@@ -143,6 +148,12 @@
       }
       .seta-certificacoes {
         padding: 15px;
+      }
+      .certificacoes-itens {
+        gap: 13px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
       }
     }
     .direitos {

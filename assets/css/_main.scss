@@ -38,6 +38,7 @@ main {
   position: relative;
   .swiper-slide {
     border-radius: 20px;
+    width: fit-content !important;
     overflow: hidden;
     background-color: $azul-escuro;
   }
