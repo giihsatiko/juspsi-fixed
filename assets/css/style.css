@@ -957,6 +957,7 @@ footer .botao-laranja {
 
 @media (max-width: 765.9px) {
   .desconto {
+    position: absolute;
     background-size: 150%;
     z-index: 3000;
   }
@@ -971,7 +972,7 @@ footer .botao-laranja {
 
   .nav {
     flex-wrap: nowrap;
-    padding: 60px 10px;
+    padding: 55px 10px;
   }
   .nav .itens-nav {
     align-self: flex-end;
@@ -1015,6 +1016,10 @@ footer .botao-laranja {
   }
   .bg-intro .texto-intro p {
     width: 100%;
+  }
+
+  .texto-categorias {
+    padding: 88px 0 15px 0;
   }
 
   .mySwiper-categorias .swiper-slide {

@@ -240,6 +240,7 @@
     },
     pagination: {
       el: ".categorias-pagination",
+      clickable: true,
     },
     breakpoints: {
       320: {

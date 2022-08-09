@@ -1,5 +1,6 @@
 @media (max-width: 765.9px) {
   .desconto {
+    position: absolute;
     background-size: 150%;
     z-index: 3000;
     a {
@@ -13,7 +14,7 @@
   }
   .nav {
     flex-wrap: nowrap;
-    padding: 60px 10px;
+    padding: 55px 10px;
     .itens-nav {
       align-self: flex-end;
     }
@@ -60,6 +61,9 @@
     }
   }
   // categorias
+  .texto-categorias {
+    padding: 88px 0 15px 0;
+  }
   .mySwiper-categorias {
     .swiper-slide {
       border-radius: 20px;

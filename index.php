@@ -10,78 +10,26 @@
     </div>
     <div class="swiper mySwiper mySwiper-categorias" id="curso-link">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="cursos-itens w-100 d-block">
-            <a class="curso-link">
-              <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
-              <div class="texto-cursos">
-                <h3 class="d-none d-md-block">Cursos de Direito</h3>
-                <div class="texto-oculto">
-                <p class="d-none">
-                    <span class="faixa"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
-                  </p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+        <?php for ($i = 0; $i < 6; $i++) : ?>
+          <div class="swiper-slide">
+            <div class="cursos-itens w-100 d-block">
+              <a class="curso-link">
+                <img src="assets/images/direito.png" alt="biblioteca" class="img-fluid">
+                <div class="texto-cursos">
+                  <h3 class="d-none d-md-block">Cursos de Direito</h3>
+                  <div class="texto-oculto">
+                    <p class="d-none">
+                      <span class="faixa"></span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
+                      semper, elit quam cursus nibh, sed varius nisi risus in leo.
+                    </p>
+                    <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cursos-itens w-100 d-block">
-            <a class="curso-link">
-              <img src="assets/images/psicologia.png" alt="biblioteca" class="img-fluid">
-              <div class="texto-cursos">
-                <h3 class="d-none d-md-block">Cursos de Psicologia</h3>
-                <div class="texto-oculto">
-                  <p class="d-none">
-                    <span class="faixa"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
-                  </p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cursos-itens w-100 d-block">
-            <a class="curso-link">
-              <img src="assets/images/servico-social.png" alt="biblioteca" class="img-fluid">
-              <div class="texto-cursos">
-                <h3 class="d-none d-md-block">Serviço Social</h3>
-                <div class="texto-oculto">
-                  <p class="d-none">
-                    <span class="faixa"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
-                  </p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cursos-itens w-100 d-block">
-            <a class="curso-link">
-              <img src="assets/images/cursos-preparatorios.png" alt="biblioteca" class="img-fluid">
-              <div class="texto-cursos">
-                <h3 class="d-none d-md-block">Cursos Preparatórios</h3>
-                <div class="texto-oculto">
-                  <p class="d-none">
-                    <span class="faixa"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis
-                    semper, elit quam cursus nibh, sed varius nisi risus in leo.
-                  </p>
-                  <div class="mais"><img src="assets/images/mais.png" alt="simbolo mais"></div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+        <?php endfor; ?>
       </div>
       <div class="setas-categorias d-flex d-lg-none pt-3">
         <div class="categorias-button-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
