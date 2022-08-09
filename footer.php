@@ -92,6 +92,12 @@
           <a href="">Inteligência emocional</a>
         </div>
       </div>
+      <div class="col-12 d-flex justify-content-center align-items-center d-md-none login-mobile">
+        <a href="" class="botao-laranja fw-600 fs-16">
+          <img src="assets/images/user.png" alt="usuário">
+          Login | Criar conta
+        </a>
+      </div>
     </div>
     <div class="certificacoes-box d-flex align-items-center justify-content-center flex-column">
       <div class="certificacoes d-flex align-items-center flex-column">
@@ -196,11 +202,12 @@
   });
 
   jQuery('.toggle-footer').on('click', function() {
-    if (jQuery('.itens-footer').attr('style')) {
-      jQuery('.itens-footer').removeAttr('style');
+    let ul = jQuery(this).parent().find('.itens-footer');
+    if (ul.attr('style')) {
+      ul.removeAttr('style');
     } else {
-      jQuery('.itens-footer').css({
-        'max-height': jQuery('.itens-footer').prop('scrollHeight') + 'px'
+      ul.css({
+        'max-height': jQuery(ul).prop('scrollHeight') + 'px'
       });
     }
   });

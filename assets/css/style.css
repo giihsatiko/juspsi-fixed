@@ -976,6 +976,9 @@ footer .botao-laranja {
   .nav .itens-nav {
     align-self: flex-end;
   }
+  .nav .logo-mobile {
+    z-index: 3500;
+  }
 
   .menu {
     margin: 0;
@@ -1076,16 +1079,31 @@ footer .botao-laranja {
     padding-top: 104px;
   }
 
+  .links-footer {
+    padding-top: 0 !important;
+  }
+
   .toggle-footer {
-    border-bottom: 1px solid #643A9B;
+    border-bottom: 1px solid #643a9b;
     height: 78px;
     gap: 17px;
   }
 
+  .login-mobile {
+    border-bottom: 1px solid #643a9b;
+    height: 78px;
+  }
+
   .itens-footer {
-    max-height: 0;
+    display: block;
+    max-height: 0px;
     overflow: hidden;
     transition: all 1s ease-in-out;
+    margin: auto;
+    text-align: center;
+  }
+  .itens-footer a {
+    margin: auto;
   }
 
   .certificacoes-box .certificacoes {
@@ -1106,6 +1124,10 @@ footer .botao-laranja {
     max-height: 0;
     overflow: hidden;
     transition: all 1s ease-in-out;
+  }
+  .certificacoes-box .politicas {
+    gap: 15px !important;
+    padding: 22px 0 33px 0;
   }
   .certificacoes-box .direitos {
     padding-top: 30px;

@@ -17,6 +17,9 @@
     .itens-nav {
       align-self: flex-end;
     }
+    .logo-mobile {
+      z-index: 3500;
+    }
   }
   .menu {
     margin: 0;
@@ -27,7 +30,7 @@
     .itens-1,
     .itens-2 {
       height: fit-content;
-          width: 100% !important;
+      width: 100% !important;
     }
     .links-1,
     .links-2 {
@@ -83,7 +86,7 @@
     }
   }
 
-  // categorias 
+  // categorias
   .texto-cursos {
     bottom: unset;
   }
@@ -122,20 +125,33 @@
     }
   }
 
-  // conheca 
+  // conheca
   .texto-conheca {
     padding-top: 104px;
   }
   // footer
+  .links-footer {
+    padding-top: 0 !important;
+  }
   .toggle-footer {
-    border-bottom: 1px solid #643A9B;
+    border-bottom: 1px solid #643a9b;
     height: 78px;
     gap: 17px;
   }
+  .login-mobile {
+    border-bottom: 1px solid #643a9b;
+    height: 78px;
+  }
   .itens-footer {
-    max-height: 0;
+    display: block;
+    max-height: 0px;
     overflow: hidden;
     transition: all 1s ease-in-out;
+    margin: auto;
+    text-align: center;
+    a {
+      margin: auto;
+    }
   }
   .certificacoes-box {
     .certificacoes {
@@ -156,6 +172,10 @@
         overflow: hidden;
         transition: all 1s ease-in-out;
       }
+    }
+    .politicas {
+      gap: 15px !important;
+      padding:22px 0 33px 0;
     }
     .direitos {
       padding-top: 30px;
