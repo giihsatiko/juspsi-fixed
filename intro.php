@@ -40,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="descer d-none d-sm-block">
+  <div class="descer d-none d-md-block">
     <a href="#categorias" class="d-flex flex-column align-items-center">
       <p class="fw-500 fs-12">DESCER PÁGINA</p>
       <span class="seta-baixo"></span>

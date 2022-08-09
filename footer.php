@@ -1,7 +1,7 @@
 <footer class="mt-5">
   <div class="container-lg container-fluid">
     <div class="row links-footer">
-      <div class="col-12 col-lg-3 f-white">
+      <div class="col-12 col-md-3 f-white">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">INSTITUCIONAL</h2>
@@ -14,7 +14,7 @@
           <a href="">Contato</a>
         </div>
       </div>
-      <div class="col-12 col-lg-3 f-white">
+      <div class="col-12 col-md-3 f-white">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">CURSOS PREPARATÓRIOS</h2>
@@ -25,7 +25,7 @@
           <a href="">Simulados online</a>
         </div>
       </div>
-      <div class="col-12 col-lg-3 f-white">
+      <div class="col-12 col-md-3 f-white">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">PARA SUA EMPRESA</h2>
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 f-white">
+      <div class="col-12 col-md-3 f-white">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">CURSOS</h2>
@@ -75,13 +75,13 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 d-none d-sm-block">
+      <div class="col-12 col-md-6 col-lg-3 d-none d-sm-block">
         <a href="" class="botao-laranja fw-600 fs-16">
           <img src="assets/images/user.png" alt="usuário">
           Login | Criar conta
         </a>
       </div>
-      <div class="col-12 col-lg-3 f-white itens-footer">
+      <div class="col-12 col-md-6 col-lg-3 f-white itens-footer">
         <div class="d-flex align-items-center toggle-footer">
           <img src="assets/images/seta-baixo.png" alt="seta apontanto para baixo" class="d-block d-md-none">
           <h2 class="fw-700 fs-20">COACHING E INTELIGÊNCIA EMOCIONAL</h2>
@@ -119,7 +119,7 @@
       </div>
     </div>
   </div>
-  <div class="seta-topo d-none d-md-block">
+  <div class="seta-topo d-none d-lg-block">
     <a href="#topo">
       <img src="assets/images/seta-topo.svg" alt="seta para redirecionar ao topo">
     </a>

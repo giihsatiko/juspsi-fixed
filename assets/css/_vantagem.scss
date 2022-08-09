@@ -1,8 +1,5 @@
 
 .conheca-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 123px;
   padding-bottom: 122px;
   gap: 80px;
@@ -62,12 +59,9 @@
 
 
 .diferenciais-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
-  height: 620px;
+  height: fit-content;
+  min-height: 620px;
   h1 {
     font-weight: 700;
     font-size: 35px;
@@ -77,9 +71,6 @@
     padding-bottom: 60px;
   }
   .diferenciais-itens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 100px;
     &>div {
       display: flex;
