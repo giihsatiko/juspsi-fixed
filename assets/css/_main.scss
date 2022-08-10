@@ -5,12 +5,7 @@ main {
     margin: 54px 0 86px 0;
   }
 }
-.mySwiper-categorias {
-  .swiper-wrapper {
-    border-radius: 20px;
-    overflow: hidden;
-  }
-}
+
 .texto-categorias {
   padding-top: 110px;
   display: flex;
@@ -34,31 +29,6 @@ main {
   }
 }
 
-.mySwiper-cursos {
-  position: relative;
-  .swiper-slide {
-    border-radius: 20px;
-    width: fit-content !important;
-    overflow: hidden;
-    background-color: $azul-escuro;
-  }
-  .cursos-button-prev, .cursos-button-next {
-    position: absolute;
-    z-index: 900;
-    &:hover circle {
-      fill: $laranja;
-      stroke: $laranja;
-    }
-  }
-  .cursos-button-prev {
-    top: 50%;
-    left: 0;
-  }
-  .cursos-button-next {
-    top: 50%;
-    right: 0;
-  }
-}
 .cursos-itens {
   overflow: hidden;
   .curso-link {

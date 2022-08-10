@@ -226,6 +226,7 @@
   });
 
   var swiper1 = new Swiper(".mySwiper-intro", {
+    loop: true,
     navigation: {
       nextEl: ".intro-button-next",
       prevEl: ".intro-button-prev",
@@ -255,6 +256,7 @@
     }
   });
   var swiper3 = new Swiper(".mySwiper-cursos", {
+    loop: true,
     navigation: {
       nextEl: ".cursos-button-next",
       prevEl: ".cursos-button-prev",
@@ -273,6 +275,7 @@
   });
 
   var swiper4 = new Swiper(".mySwiper-depoimentos", {
+    loop: true,
     navigation: {
       nextEl: ".depoimentos-button-next",
       prevEl: ".depoimentos-button-prev",

@@ -79,6 +79,11 @@
     }
   }
   // categorias
+  .mySwiper-categorias {
+    .swiper-wrapper {
+      overflow: visible;
+    }
+  }
   .texto-categorias {
     padding: 88px 0 15px 0;
   }

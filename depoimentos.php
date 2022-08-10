@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="swiper mySwiper mySwiper-depoimentos">
       <div class="titulo-depoimentos d-flex flex-column flex-md-row align-items-center align-sm-start justify-content-between">
-        <div class="d-flex flex-column align-sm-start align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-md-start">
           <h3>DEPOIMENTOS</h3>
           <p>Opinião de nossos alunos sobre os cursos JUSPSI</p>
         </div>
