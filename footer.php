@@ -185,10 +185,12 @@
         jQuery('.menu').removeClass('active');
         jQuery('.links-menu').addClass('d-none');
         jQuery('body').removeClass('overflow-hidden');
+        jQuery('.nav').removeClass('bg-menu-mobile');
       } else {
         jQuery('.menu').addClass('active');
         jQuery('.links-menu').removeClass('d-none');
         jQuery('body').addClass('overflow-hidden');
+        jQuery('.nav').addClass('bg-menu-mobile');
       }
     });
   });

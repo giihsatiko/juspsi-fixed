@@ -15,23 +15,39 @@
   .nav {
     flex-wrap: nowrap;
     padding: 55px 10px;
+    &.bg-menu-mobile {
+      background: linear-gradient(
+        90deg,
+        rgba(49, 48, 108, 0.99) -0.7%,
+        rgba(100, 58, 155, 0.99) 47.21%,
+        rgba(240, 127, 60, 0.99) 98.21%
+      );
+      background-size: 120%;
+    }
     .itens-nav {
       align-self: flex-end;
     }
     .logo-mobile {
       z-index: 3500;
     }
+    .links-menu {
+      margin-top: 150px;
+    }
   }
   .menu {
     margin: 0;
   }
   .links-menu {
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow: auto;
     .itens-1,
     .itens-2 {
       height: fit-content;
       width: 100% !important;
+      padding: 30px 0;
+    }
+    .itens-2 {
+      order: -1;
     }
     .links-1,
     .links-2 {
@@ -42,12 +58,14 @@
     }
     .links-1 {
       margin-top: 23px;
+      padding-bottom: 150px;
       a {
         font-size: 20px;
       }
     }
     .links-2 {
       font-size: 18px;
+      margin-top: 0;
     }
   }
   .bg-intro {
