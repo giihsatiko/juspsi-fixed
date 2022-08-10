@@ -52,7 +52,8 @@
   }
 }
 
-.paginacao-intro, .paginacao-intro-mobile {
+.paginacao-intro,
+.paginacao-intro-mobile {
   padding: 0 32px 34px 0;
   position: absolute;
   bottom: 0;
@@ -84,7 +85,7 @@
   transform: translate(-45%, -50%);
 }
 
-// categorias 
+// categorias
 .mySwiper-categorias {
   .swiper-wrapper {
     border-radius: 20px;
@@ -92,16 +93,38 @@
   }
 }
 
-// cursos 
+// cursos
 .mySwiper-cursos {
   position: relative;
+  &::before {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(270deg, #31306c 0%, rgba(49, 48, 108, 0) 100%);
+    transform: rotate(180deg);
+  }
+  &::after {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    width: 85px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(270deg, #31306c 0%, rgba(49, 48, 108, 0) 100%);
+  }
   .swiper-slide {
     border-radius: 20px;
     width: fit-content !important;
     overflow: hidden;
     background-color: $azul-escuro;
   }
-  .cursos-button-prev, .cursos-button-next {
+  .cursos-button-prev,
+  .cursos-button-next {
     position: absolute;
     z-index: 900;
     &:hover circle {
