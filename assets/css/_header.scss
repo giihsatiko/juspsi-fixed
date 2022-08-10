@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 900;
+  z-index: 1100;
   p {
     padding-top: 10px;
   }
@@ -24,7 +24,10 @@
   position: absolute;
   left: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 1000;
+  &.bg-menu-mobile {
+    z-index: 2000;
+  }
   .itens-nav {
     display: flex;
     justify-content: space-between;
